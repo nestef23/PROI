@@ -31,7 +31,8 @@ class samolot
     static int licznik;
 public:
     samolot();
-    int ileObiektow();
+    ~samolot();
+    static int ileObiektow();
     void wypisz();
 
     samolot operator=(const samolot &s) const;
@@ -41,8 +42,6 @@ public:
     samolot operator+=(const samolot &s) const;
     samolot operator-=(const samolot &s) const;
 
-
-
 };
 
 int  samolot::ileObiektow(){
@@ -50,16 +49,32 @@ int  samolot::ileObiektow(){
 }
 
 samolot::samolot(){
+    #ifdef _DEBUG
+    cout<<"Stworzono obiekt samolot"<<endl;
+    #endif // _DEBUG
     licznik++;
 }
 
+samolot::~samolot(){
+    #ifdef _DEBUG
+    cout<<"Usunieto obiekt samolot"<<endl;
+    #endif // _DEBUG
+    licznik++;
+}
+
+int samolot::licznik = 0;
+
 int main()
 {
+
 #ifdef _DEBUG
     cout<<"Wersja do debugowania"<<endl;
 #else
     cout<<"Wersja do relase"<<endl;
 #endif // _DEBUG
 
+    cout<<samolot::ileObiektow()<<endl;
+    samolot a;
+    cout<<samolot::ileObiektow()<<endl;
     return 0;
 }
