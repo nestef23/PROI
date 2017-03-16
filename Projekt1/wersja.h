@@ -6,4 +6,6 @@ class wersja
 public:
     wersja();
     ~wersja();
+
+    bool wersja!=(const wersja &w) const;
 };

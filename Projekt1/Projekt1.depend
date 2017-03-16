@@ -2,28 +2,34 @@
 1489610444 source:/home/krzysiek/Pulpit/Projekt1/main.cpp
 	<iostream>
 
-1489652486 source:/home/mion/s/166/kcaderek/Desktop/PROI P1/PROI/Projekt1/main.cpp
+1489654283 source:/home/mion/s/166/kcaderek/Desktop/PROI P1/PROI/Projekt1/main.cpp
 	<iostream>
 	"hangar.h"
 
-1489651007 /home/mion/s/166/kcaderek/Desktop/PROI P1/PROI/Projekt1/parametry.h
+1489654319 /home/mion/s/166/kcaderek/Desktop/PROI P1/PROI/Projekt1/parametry.h
 
-1489650849 source:/home/mion/s/166/kcaderek/Desktop/PROI P1/PROI/Projekt1/samolot.cpp
+1489654257 source:/home/mion/s/166/kcaderek/Desktop/PROI P1/PROI/Projekt1/samolot.cpp
+	<iostream>
+	"samolot.h"
 
 1489652313 source:/home/mion/s/166/kcaderek/Desktop/PROI P1/PROI/Projekt1/hangar.cpp
 	<iostream>
 	"hangar.h"
 
-1489652375 /home/mion/s/166/kcaderek/Desktop/PROI P1/PROI/Projekt1/hangar.h
+1489652628 /home/mion/s/166/kcaderek/Desktop/PROI P1/PROI/Projekt1/hangar.h
 	"samolot.h"
 
-1489652414 /home/mion/s/166/kcaderek/Desktop/PROI P1/PROI/Projekt1/samolot.h
+1489654234 /home/mion/s/166/kcaderek/Desktop/PROI P1/PROI/Projekt1/samolot.h
 	"parametry.h"
 	"wersja.h"
 
-1489651875 /home/mion/s/166/kcaderek/Desktop/PROI P1/PROI/Projekt1/wersja.h
+1489653829 /home/mion/s/166/kcaderek/Desktop/PROI P1/PROI/Projekt1/wersja.h
 
-1489651731 source:/home/mion/s/166/kcaderek/Desktop/PROI P1/PROI/Projekt1/parametry.cpp
+1489653790 source:/home/mion/s/166/kcaderek/Desktop/PROI P1/PROI/Projekt1/parametry.cpp
 	<iostream>
 	"parametry.h"
+
+1489651994 source:/home/mion/s/166/kcaderek/Desktop/PROI P1/PROI/Projekt1/wersja.cpp
+	<iostream>
+	"wersja.h"
 

@@ -12,18 +12,25 @@ int samolot::licznik = 0;
 int main()
 {
 
-#ifdef _DEBUG
+    #ifdef _DEBUG
     cout<<"Wersja do debugowania"<<endl;
-#else
+    #else
     cout<<"Wersja relase"<<endl;
-#endif // _DEBUG
+    #endif // _DEBUG
 
-    cout<<"Jest "<<samolot::ileObiektow()<<" obiektów typu samolot"<<endl;
     samolot a;
-    cout<<"Jest "<<samolot::ileObiektow()<<" obiektów typu samolot"<<endl;
-    samolot *b = new samolot;
-    cout<<"Jest "<<samolot::ileObiektow()<<" obiektów typu samolot"<<endl;
-    delete b;
-    cout<<"Jest "<<samolot::ileObiektow()<<" obiektów typu samolot"<<endl;
+    samolot b;
+    if(a==b)
+        cout<<"Takie same"<<endl;
+    else
+        cout<<"Inne"<<endl;
+
+    b.p.predkosc_max =50;
+    cout<<a.nazwa<<endl;
+
+    if(a==b)
+        cout<<"Takie same"<<endl;
+    else
+        cout<<"Inne"<<endl;
     return 0;
 }
