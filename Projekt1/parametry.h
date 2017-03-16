@@ -6,6 +6,7 @@ class parametry
     parametry(int p=0, int z=0);
     ~parametry();
     bool operator!=(const parametry &p) const;
+    parametry& operator=(const parametry &p);
 };
 
 

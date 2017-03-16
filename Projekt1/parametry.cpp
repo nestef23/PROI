@@ -26,3 +26,9 @@ bool parametry::operator!=(const parametry &p)const{
         rozne =1;
     return rozne;
 }
+
+parametry& parametry::operator=(const parametry &p){
+    predkosc_max = p.predkosc_max;
+    zasieg_max = p.zasieg_max;
+    return *this;
+}

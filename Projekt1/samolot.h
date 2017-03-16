@@ -15,6 +15,6 @@ class samolot
     static int ileObiektow();
     void wypisz();
 
-    samolot operator=(const samolot &s) const;
+    samolot& operator=(const samolot &s);
     bool operator==(const samolot &s) const;
 }; //samolot

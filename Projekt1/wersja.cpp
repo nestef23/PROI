@@ -4,10 +4,12 @@
 #define _DEBUG
 using namespace std;
 
-wersja::wersja(){ //konstruktor
+wersja::wersja(int b, int e){ //konstruktor
     #ifdef _DEBUG
     cout<<"Stworzono obiekt wersja"<<endl;
     #endif // _DEBUG
+    siedzenia_B = b;
+    siedzenia_E = e;
 }
 
 wersja::~wersja(){ //konstruktor
@@ -18,10 +20,16 @@ wersja::~wersja(){ //konstruktor
 
 bool wersja::operator!=(const wersja &w)const{
     bool rozne = 0;
-    if(predkosc_max!=p.predkosc_max)
+    if(siedzenia_B!=siedzenia_B)
         rozne =1;
-    if(zasieg_max!=p.zasieg_max)
+    if(siedzenia_E!=w.siedzenia_E)
         rozne =1;
     return rozne;
+}
+
+wersja& wersja::operator=(const wersja &w){
+    siedzenia_B = w.siedzenia_B;
+    siedzenia_E = w.siedzenia_E;
+    return *this;
 }
 

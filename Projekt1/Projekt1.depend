@@ -33,3 +33,34 @@
 	<iostream>
 	"wersja.h"
 
+1489694088 source:/home/krzysiek/Pulpit/Projekt1git/Projekt1/hangar.cpp
+	<iostream>
+	"hangar.h"
+
+1489694088 /home/krzysiek/Pulpit/Projekt1git/Projekt1/hangar.h
+	"samolot.h"
+
+1489695813 /home/krzysiek/Pulpit/Projekt1git/Projekt1/samolot.h
+	"parametry.h"
+	"wersja.h"
+
+1489695531 /home/krzysiek/Pulpit/Projekt1git/Projekt1/parametry.h
+
+1489695696 /home/krzysiek/Pulpit/Projekt1git/Projekt1/wersja.h
+
+1489695681 source:/home/krzysiek/Pulpit/Projekt1git/Projekt1/main.cpp
+	<iostream>
+	"hangar.h"
+
+1489695726 source:/home/krzysiek/Pulpit/Projekt1git/Projekt1/parametry.cpp
+	<iostream>
+	"parametry.h"
+
+1489695794 source:/home/krzysiek/Pulpit/Projekt1git/Projekt1/samolot.cpp
+	<iostream>
+	"samolot.h"
+
+1489695711 source:/home/krzysiek/Pulpit/Projekt1git/Projekt1/wersja.cpp
+	<iostream>
+	"wersja.h"
+

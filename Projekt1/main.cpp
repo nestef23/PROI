@@ -25,12 +25,20 @@ int main()
     else
         cout<<"Inne"<<endl;
 
-    b.p.predkosc_max =50;
-    cout<<a.nazwa<<endl;
+    a.p.predkosc_max=50;
+    a.w.siedzenia_B=100;
 
     if(a==b)
         cout<<"Takie same"<<endl;
     else
         cout<<"Inne"<<endl;
+
+    b=a;
+
+     if(a==b)
+        cout<<"Takie same"<<endl;
+    else
+        cout<<"Inne"<<endl;
+
     return 0;
 }

@@ -27,7 +27,14 @@ bool samolot::operator==(const samolot &s) const{
     bool kopia = 1;
     if(p!=s.p)
         kopia =0;
-   // if(w!=s.w)
-   //     kopia =0;
+    if(w!=s.w)
+        kopia =0;
     return kopia;
+}
+
+samolot& samolot::operator=(const samolot &s){
+    p = s.p;
+    w = s.w;
+
+    return *this;
 }
