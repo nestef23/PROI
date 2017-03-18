@@ -59,3 +59,10 @@ samolot& samolot::operator=( samolot &s){
 
     return *this;
 }
+
+ostream& operator<< (ostream &os, const samolot &s){
+    os<<s.getnazwa()<<" "<<s.getwlasciciel()<<endl;
+
+    return os;
+}
+

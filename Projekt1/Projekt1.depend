@@ -64,16 +64,16 @@
 	<iostream>
 	"wersja.h"
 
-1489865293 source:/home/krzysztof/Pulpit/PROI/PROI/Projekt1/hangar.cpp
+1489872768 source:/home/krzysztof/Pulpit/PROI/PROI/Projekt1/hangar.cpp
 	<iostream>
 	"hangar.h"
 
-1489865292 /home/krzysztof/Pulpit/PROI/PROI/Projekt1/hangar.h
+1489872659 /home/krzysztof/Pulpit/PROI/PROI/Projekt1/hangar.h
 	"samolot.h"
 	<ostream>
 	<vector>
 
-1489866324 /home/krzysztof/Pulpit/PROI/PROI/Projekt1/samolot.h
+1489872540 /home/krzysztof/Pulpit/PROI/PROI/Projekt1/samolot.h
 	"parametry.h"
 	"wersja.h"
 	<string>
@@ -82,7 +82,7 @@
 
 1489860820 /home/krzysztof/Pulpit/PROI/PROI/Projekt1/wersja.h
 
-1489866577 source:/home/krzysztof/Pulpit/PROI/PROI/Projekt1/main.cpp
+1489872421 source:/home/krzysztof/Pulpit/PROI/PROI/Projekt1/main.cpp
 	<iostream>
 	"testy.h"
 	"hangar.h"
@@ -91,7 +91,7 @@
 	<iostream>
 	"parametry.h"
 
-1489865789 source:/home/krzysztof/Pulpit/PROI/PROI/Projekt1/samolot.cpp
+1489872583 source:/home/krzysztof/Pulpit/PROI/PROI/Projekt1/samolot.cpp
 	<iostream>
 	"samolot.h"
 
@@ -101,7 +101,7 @@
 
 1489866058 /home/krzysztof/Pulpit/PROI/PROI/Projekt1/testy.h
 
-1489866335 source:/home/krzysztof/Pulpit/PROI/PROI/Projekt1/testy.cpp
+1489872922 source:/home/krzysztof/Pulpit/PROI/PROI/Projekt1/testy.cpp
 	"testy.h"
 	"hangar.h"
 	<iostream>

@@ -26,15 +26,15 @@ void hangar::setnazwa_lotniska(string s){
 void hangar::setl_miejsc(int l){
         l_miejsc = l;
 }
-string hangar::getnazwa_lotniska(){
+string hangar::getnazwa_lotniska() const{
         return nazwa_lotniska;
 }
-int hangar::getl_miejsc(){
+int hangar::getl_miejsc() const{
      return l_miejsc;
 }
 
-hangar& hangar::operator+(samolot &s){ //dodawanie samolotu do hangaru
-    if(wolne<=l_miejsc){
+hangar& hangar::operator+=(samolot &s){ //dodawanie samolotu do hangaru
+    if(wolne<l_miejsc){
         han.push_back(s);
         wolne++;
     }
@@ -45,9 +45,9 @@ hangar& hangar::operator+(samolot &s){ //dodawanie samolotu do hangaru
 }
 
 ostream& operator<< (ostream &os, const hangar &h){
-    os<<h.nazwa_lotniska<<" "<<h.l_miejsc<<endl;
-    for(int i= 0; i<=h.wolne; i++){
-        os<<h.han[i].getnazwa()<<" "<<h.han[i].getwlasciciel()<<endl;
+    os<<h.getnazwa_lotniska()<<" "<<h.getl_miejsc()<<endl;
+    for (int i=0; i<h.wolne; i++){
+        cout<<h.han[i];
     }
     return os;
 }

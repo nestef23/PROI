@@ -39,6 +39,8 @@
 		<Unit filename="parametry.h" />
 		<Unit filename="samolot.cpp" />
 		<Unit filename="samolot.h" />
+		<Unit filename="testy.cpp" />
+		<Unit filename="testy.h" />
 		<Unit filename="wersja.cpp" />
 		<Unit filename="wersja.h" />
 		<Extensions>

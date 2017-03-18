@@ -9,8 +9,15 @@ void test2(){ //test klasy hangar
     s.setnazwa("A158");
     s.setwlasciciel("LOT");
 
-    h+s;
+    h+=s;
+    h+=s;
+    h+=s;
+    s.getp().setpredkosc_max(50);
+    s.setnazwa("B545");
+    h+=s;
+    h+=s;
     cout<<h;
+    cout<<s.ileObiektow()<<endl;
 
 }
 

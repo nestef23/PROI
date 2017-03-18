@@ -28,4 +28,7 @@ public:
 
     samolot& operator=( samolot &s);
     bool operator==( samolot &s) ;
+
+    friend
+    std::ostream& operator<<(std::ostream &os, const samolot &s);
 }; //samolot

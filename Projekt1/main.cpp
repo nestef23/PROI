@@ -7,19 +7,6 @@ using namespace std;
 
 int samolot::licznik = 0;
 
-void test2(){ //test klasy hangar
-    hangar h;
-    samolot s;
-    h.setl_miejsc(10);
-    h.setnazwa_lotniska("WAR");
-    s.setnazwa("A158");
-    s.setwlasciciel("LOT");
-
-    h+s;
-    cout<<h;
-
-}
-
 int main()
 {
     #ifdef _DEBUG
