@@ -35,7 +35,7 @@ int hangar::getl_miejsc() const{
 
 hangar& hangar::operator+=(samolot &s){ //dodawanie samolotu do hangaru
     if(wolne<l_miejsc){
-        han.push_back(s);
+        han.push_back(&s);
         wolne++;
     }
     else{
@@ -47,7 +47,7 @@ hangar& hangar::operator+=(samolot &s){ //dodawanie samolotu do hangaru
 ostream& operator<< (ostream &os, const hangar &h){
     os<<h.getnazwa_lotniska()<<" "<<h.getl_miejsc()<<endl;
     for (int i=0; i<h.wolne; i++){
-        cout<<h.han[i];
+        cout<<(*h.han[i]);
     }
     return os;
 }

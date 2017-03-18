@@ -7,7 +7,7 @@ class hangar
     string nazwa_lotniska;
     int l_miejsc;
     int wolne;
-    vector<samolot>  han;
+    vector<samolot*>  han;
 public:
     hangar(string nazwa = "BRAK", int n=0);
     ~hangar();

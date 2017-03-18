@@ -12,10 +12,10 @@ void test2(){ //test klasy hangar
     h+=s;
     h+=s;
     h+=s;
-    s.getp().setpredkosc_max(50);
+    samolot s2=s;
     s.setnazwa("B545");
-    h+=s;
-    h+=s;
+    h+=s2;
+    h+=s2;
     cout<<h;
     cout<<s.ileObiektow()<<endl;
 
@@ -40,4 +40,20 @@ void test1(){ //test operatorów = i == dlaklasy samolot
         cout<<"Takie same"<<endl;
     else
         cout<<"Inne"<<endl;
+}
+
+void test3(){
+    hangar f;
+    samolot b;
+    cout<<b.ileObiektow()<<endl;
+    samolot g;
+    cout<<g.ileObiektow()<<endl;
+    f+=g;
+     cout<<b.ileObiektow()<<endl;
+    f.setl_miejsc(5);
+    f+=g;
+    f+=g;
+    f+=g;
+    f+=g;
+     cout<<b.ileObiektow()<<endl;
 }

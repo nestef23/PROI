@@ -24,10 +24,10 @@ void parametry::setpredkosc_max(int p){ //setter
 void parametry::setzasieg_max(int z){ //setter
     parametry::zasieg_max = z;
 }
-int parametry::getpredkosc_max(){ //getter
+int parametry::getpredkosc_max() const{ //getter
     return parametry::predkosc_max;
 }
-int parametry::getzasieg_max(){ //getter
+int parametry::getzasieg_max()const{ //getter
     return parametry::zasieg_max;
 }
 

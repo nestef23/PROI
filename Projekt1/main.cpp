@@ -15,6 +15,7 @@ int main()
     cout<<"Wersja relase"<<endl;
     #endif // _DEBUG
 
+
     test2();
 
 

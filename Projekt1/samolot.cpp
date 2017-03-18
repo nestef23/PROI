@@ -44,7 +44,7 @@ wersja& samolot::getw(){
     return samolot::w;
 }
 
-bool samolot::operator==( samolot &s) {
+bool samolot::operator==(samolot &s) {
     bool kopia = 1;
     if(p!=s.getp())
         kopia =0;
@@ -53,7 +53,7 @@ bool samolot::operator==( samolot &s) {
     return kopia;
 }
 
-samolot& samolot::operator=( samolot &s){
+samolot& samolot::operator=(samolot &s){
     p = s.getp();
     w = s.getw();
 
