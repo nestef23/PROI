@@ -1,4 +1,5 @@
 #include <iostream>
+#include "testy.h"
 #include "hangar.h"
 
 #define _DEBUG
@@ -6,33 +7,19 @@ using namespace std;
 
 int samolot::licznik = 0;
 
-void test1{ //test operatorów = i == dlaklasy samolot
-    samolot a;
-    samolot b;
-    if(a==b)
-        cout<<"Takie same"<<endl;
-    else
-        cout<<"Inne"<<endl;
-    a.getp().setpredkosc_max(50);
-    if(a==b)
-        cout<<"Takie same"<<endl;
-    else
-        cout<<"Inne"<<endl;
-
-    b=a;
-
-     if(a==b)
-        cout<<"Takie same"<<endl;
-    else
-        cout<<"Inne"<<endl;
-}
 void test2(){ //test klasy hangar
-    hangar h = new hangar("h1", 10);
-    samolot a;
-    h+=a;
+    hangar h;
+    samolot s;
+    h.setl_miejsc(10);
+    h.setnazwa_lotniska("WAR");
+    s.setnazwa("A158");
+    s.setwlasciciel("LOT");
+
+    h+s;
     cout<<h;
 
 }
+
 int main()
 {
     #ifdef _DEBUG

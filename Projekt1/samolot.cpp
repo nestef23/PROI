@@ -31,10 +31,10 @@ void samolot::setnazwa(string n){
 void samolot::setwlasciciel(string w){
     samolot::wlasciciel = w;
 }
-string samolot::getnazwa(){
+string samolot::getnazwa()const{
     return samolot::nazwa;
 }
-string samolot::getwlasciciel(){
+string samolot::getwlasciciel()const{
     return samolot::wlasciciel;
 }
 parametry& samolot::getp(){

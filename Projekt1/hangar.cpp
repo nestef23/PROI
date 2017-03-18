@@ -11,7 +11,6 @@ hangar::hangar(string nazwa, int n){ //konstruktor
     nazwa_lotniska = nazwa;
     l_miejsc=n;
     wolne=0;
-    lista = new samolot[n];
 
 }
 
@@ -21,20 +20,34 @@ hangar::~hangar(){ //konstruktor
     #endif // _DEBUG
 }
 
-hangar hangar::operator+=(const samolot &s){ //dodawanie samolotu do hangaru
+void hangar::setnazwa_lotniska(string s){
+    nazwa_lotniska = s;
+}
+void hangar::setl_miejsc(int l){
+        l_miejsc = l;
+}
+string hangar::getnazwa_lotniska(){
+        return nazwa_lotniska;
+}
+int hangar::getl_miejsc(){
+     return l_miejsc;
+}
+
+hangar& hangar::operator+(samolot &s){ //dodawanie samolotu do hangaru
     if(wolne<=l_miejsc){
-        lista[wolne] = s;
+        han.push_back(s);
         wolne++;
     }
     else{
         cout<<"Brak miejsc"<<endl;
     }
+    return *this;
 }
 
 ostream& operator<< (ostream &os, const hangar &h){
-    os<<nazwa_lotnikska<<" "<l_miejsc<<endl;
-    for(int i= 0; i<=wolne){
-        os<<lista[i].getnazwa<<" "<<lista[i].getwlasciciel<<endl;
+    os<<h.nazwa_lotniska<<" "<<h.l_miejsc<<endl;
+    for(int i= 0; i<=h.wolne; i++){
+        os<<h.han[i].getnazwa()<<" "<<h.han[i].getwlasciciel()<<endl;
     }
     return os;
 }

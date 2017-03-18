@@ -1,24 +1,26 @@
 #include "parametry.h"
 #include "wersja.h"
+#include <string>
+using namespace std;
 class samolot
 {
-    std::string nazwa;
-    std::string wlasciciel;
+    string nazwa;
+    string wlasciciel;
     static int licznik; //Liczba stworzonych obiektow
     parametry p;
     wersja w;
 
 public:
-    samolot(std::string n= "BRAK", std::string w= "BRAK");
+    samolot(string n="BRAK", string w="BRAK");
     ~samolot();
 
     static int ileObiektow(); //funkcja zwracająca liczbe stworzonych obiektow
     void wypisz();
 
-    void setnazwa(std::string);
-    void setwlasciciel(std::string);
-    std::string getnazwa();
-    std::string getwlasciciel();
+    void setnazwa(string);
+    void setwlasciciel(string);
+    std::string getnazwa()const;
+    std::string getwlasciciel()const;
     parametry& getp();
     wersja& getw();
 

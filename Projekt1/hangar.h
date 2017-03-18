@@ -1,16 +1,23 @@
 #include "samolot.h"
 #include <ostream>
+#include <vector>
+using namespace std;
 class hangar
 {
     std::string nazwa_lotniska;
     int l_miejsc;
     int wolne;
-    samolot *lista;
+    vector<samolot>  han;
 public:
-    hangar(std::string nazwa = "BRAK", int n=0);
+    hangar(string nazwa = "BRAK", int n=0);
     ~hangar();
 
-    hangar operator+=(const samolot &s);
+    void setnazwa_lotniska(string);
+    void setl_miejsc(int);
+    std::string getnazwa_lotniska();
+    int getl_miejsc();
+
+    hangar& operator+(samolot &s);
 
     friend
     std::ostream& operator<<(std::ostream &os, const hangar &h);
