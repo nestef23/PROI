@@ -12,13 +12,26 @@ wersja::wersja(int b, int e){ //konstruktor
     siedzenia_E = e;
 }
 
-wersja::~wersja(){ //konstruktor
+wersja::~wersja(){ //destruktor
     #ifdef _DEBUG
     cout<<"Usunieto obiekt wersja"<<endl;
     #endif // _DEBUG
 }
 
-bool wersja::operator!=(const wersja &w)const{
+void wersja::setsiedzenia_B(int b){ //setter
+    wersja::siedzenia_B = b;
+}
+void wersja::setsiedzenia_E(int e){ //setter
+    wersja::siedzenia_E = e;
+}
+int wersja::getsiedzienia_B(){ //setter
+    return wersja::siedzenia_B;
+}
+int wersja::getsiedzienia_E(){ //setter
+    return wersja::siedzenia_E;
+}
+
+bool wersja::operator!=(const wersja &w)const{ // przeciążenie operatora !=
     bool rozne = 0;
     if(siedzenia_B!=siedzenia_B)
         rozne =1;
@@ -27,9 +40,8 @@ bool wersja::operator!=(const wersja &w)const{
     return rozne;
 }
 
-wersja& wersja::operator=(const wersja &w){
+wersja& wersja::operator=(const wersja &w){ // przeciążenie operatora =
     siedzenia_B = w.siedzenia_B;
     siedzenia_E = w.siedzenia_E;
     return *this;
 }
-

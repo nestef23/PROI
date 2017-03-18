@@ -1,11 +1,9 @@
 #include <iostream>
 #include "samolot.h"
-
+//#include "parametry.h"
+//#include "wersja.h"
 #define _DEBUG
 using namespace std;
-int  samolot::ileObiektow(){ //funkcja zwracająca liczbe stworzonych obiektow typu samolot
-    return samolot::licznik;
-}
 
 samolot::samolot(string n, string w){ //konstruktor
     #ifdef _DEBUG
@@ -23,18 +21,41 @@ samolot::~samolot(){ //destruktor
     licznik--;
 }
 
-bool samolot::operator==(const samolot &s) const{
+int  samolot::ileObiektow(){ //funkcja zwracająca liczbe stworzonych obiektow typu samolot
+    return samolot::licznik;
+}
+
+void samolot::setnazwa(string n){
+    samolot::nazwa = n;
+}
+void samolot::setwlasciciel(string w){
+    samolot::wlasciciel = w;
+}
+string samolot::getnazwa(){
+    return samolot::nazwa;
+}
+string samolot::getwlasciciel(){
+    return samolot::wlasciciel;
+}
+parametry& samolot::getp(){
+    return samolot::p;
+}
+wersja& samolot::getw(){
+    return samolot::w;
+}
+
+bool samolot::operator==( samolot &s) {
     bool kopia = 1;
-    if(p!=s.p)
+    if(p!=s.getp())
         kopia =0;
-    if(w!=s.w)
+    if(w!=s.getw())
         kopia =0;
     return kopia;
 }
 
-samolot& samolot::operator=(const samolot &s){
-    p = s.p;
-    w = s.w;
+samolot& samolot::operator=( samolot &s){
+    p = s.getp();
+    w = s.getw();
 
     return *this;
 }

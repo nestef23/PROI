@@ -18,7 +18,20 @@ parametry::~parametry(){ //destruktor
     #endif // _DEBUG
 }
 
-bool parametry::operator!=(const parametry &p)const{
+void parametry::setpredkosc_max(int p){ //setter
+    parametry::predkosc_max = p;
+}
+void parametry::setzasieg_max(int z){ //setter
+    parametry::zasieg_max = z;
+}
+int parametry::getpredkosc_max(){ //getter
+    return parametry::predkosc_max;
+}
+int parametry::getzasieg_max(){ //getter
+    return parametry::zasieg_max;
+}
+
+bool parametry::operator!=(const parametry &p)const{ // przeciążenie operatora !=
     bool rozne = 0;
     if(predkosc_max!=p.predkosc_max)
         rozne =1;
@@ -27,7 +40,7 @@ bool parametry::operator!=(const parametry &p)const{
     return rozne;
 }
 
-parametry& parametry::operator=(const parametry &p){
+parametry& parametry::operator=(const parametry &p){ // przeciążenie operatora =
     predkosc_max = p.predkosc_max;
     zasieg_max = p.zasieg_max;
     return *this;

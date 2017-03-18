@@ -2,19 +2,28 @@
 #include "wersja.h"
 class samolot
 {
-    public:
     std::string nazwa;
     std::string wlasciciel;
+    static int licznik; //Liczba stworzonych obiektow
     parametry p;
     wersja w;
-    //Liczba stworzonych obiektow
-    static int licznik;
+
+public:
     samolot(std::string n= "BRAK", std::string w= "BRAK");
     ~samolot();
-    //funkcja zwracająca liczbe stworzonych obiektow
-    static int ileObiektow();
+
+    static int ileObiektow(); //funkcja zwracająca liczbe stworzonych obiektow
     void wypisz();
 
-    samolot& operator=(const samolot &s);
-    bool operator==(const samolot &s) const;
+    void setnazwa(std::string);
+    void setwlasciciel(std::string);
+    std::string getnazwa();
+    std::string getwlasciciel();
+    parametry& getp();
+    wersja& getw();
+
+
+
+    samolot& operator=( samolot &s);
+    bool operator==( samolot &s) ;
 }; //samolot

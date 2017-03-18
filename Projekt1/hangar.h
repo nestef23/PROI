@@ -1,15 +1,20 @@
 #include "samolot.h"
+#include <ostream>
 class hangar
 {
     std::string nazwa_lotniska;
-    int nr_miejsca;
-    samolot lista[10];
+    int l_miejsc;
+    int wolne;
+    samolot *lista;
 public:
-    hangar();
+    hangar(std::string nazwa = "BRAK", int n=0);
     ~hangar();
 
-    samolot operator+(const samolot &s) const;
-    samolot operator-(const samolot &s) const;
-    samolot operator+=(const samolot &s) const;
-    samolot operator-=(const samolot &s) const;
+    hangar operator+=(const samolot &s);
+
+    friend
+    std::ostream& operator<<(std::ostream &os, const hangar &h);
+
+
+
 };
