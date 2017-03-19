@@ -33,30 +33,34 @@
 	<iostream>
 	"wersja.h"
 
-1489850958 source:/home/krzysiek/Pulpit/Projekt1git/Projekt1/hangar.cpp
+1489921398 source:/home/krzysiek/Pulpit/Projekt1git/Projekt1/hangar.cpp
 	<iostream>
 	"hangar.h"
 
-1489851061 /home/krzysiek/Pulpit/Projekt1git/Projekt1/hangar.h
+1489919841 /home/krzysiek/Pulpit/Projekt1git/Projekt1/hangar.h
 	"samolot.h"
+	<ostream>
+	<vector>
 
-1489855170 /home/krzysiek/Pulpit/Projekt1git/Projekt1/samolot.h
+1489918772 /home/krzysiek/Pulpit/Projekt1git/Projekt1/samolot.h
 	"parametry.h"
 	"wersja.h"
+	<string>
 
-1489852651 /home/krzysiek/Pulpit/Projekt1git/Projekt1/parametry.h
+1489918772 /home/krzysiek/Pulpit/Projekt1git/Projekt1/parametry.h
 
 1489852715 /home/krzysiek/Pulpit/Projekt1git/Projekt1/wersja.h
 
-1489854991 source:/home/krzysiek/Pulpit/Projekt1git/Projekt1/main.cpp
+1489921722 source:/home/krzysiek/Pulpit/Projekt1git/Projekt1/main.cpp
 	<iostream>
+	"testy.h"
 	"hangar.h"
 
-1489852814 source:/home/krzysiek/Pulpit/Projekt1git/Projekt1/parametry.cpp
+1489918772 source:/home/krzysiek/Pulpit/Projekt1git/Projekt1/parametry.cpp
 	<iostream>
 	"parametry.h"
 
-1489854306 source:/home/krzysiek/Pulpit/Projekt1git/Projekt1/samolot.cpp
+1489918772 source:/home/krzysiek/Pulpit/Projekt1git/Projekt1/samolot.cpp
 	<iostream>
 	"samolot.h"
 
@@ -102,6 +106,13 @@
 1489875015 /home/krzysztof/Pulpit/PROI/PROI/Projekt1/testy.h
 
 1489875040 source:/home/krzysztof/Pulpit/PROI/PROI/Projekt1/testy.cpp
+	"testy.h"
+	"hangar.h"
+	<iostream>
+
+1489918772 /home/krzysiek/Pulpit/Projekt1git/Projekt1/testy.h
+
+1489919499 source:/home/krzysiek/Pulpit/Projekt1git/Projekt1/testy.cpp
 	"testy.h"
 	"hangar.h"
 	<iostream>

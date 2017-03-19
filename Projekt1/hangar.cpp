@@ -44,6 +44,18 @@ hangar& hangar::operator+=(samolot &s){ //dodawanie samolotu do hangaru
     return *this;
 }
 
+hangar& hangar::operator-=(samolot &s){ //dodawanie samolotu do hangaru
+    if(wolne>0){
+        s=(*han.back());
+        han.pop_back();
+        wolne--;
+    }
+    else{
+        cout<<"Brak elementów"<<endl;
+    }
+    return *this;
+}
+
 ostream& operator<< (ostream &os, const hangar &h){
     os<<h.getnazwa_lotniska()<<" "<<h.getl_miejsc()<<endl;
     for (int i=0; i<h.wolne; i++){

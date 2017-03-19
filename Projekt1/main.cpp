@@ -16,7 +16,7 @@ int main()
     #endif // _DEBUG
 
 
-    test2();
+    test3();
 
 
 

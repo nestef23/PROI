@@ -18,6 +18,7 @@ public:
     int getl_miejsc() const;
 
     hangar& operator+=(samolot &s);
+    hangar& operator-=(samolot &s);
 
     friend
     std::ostream& operator<<(std::ostream &os, const hangar &h);
