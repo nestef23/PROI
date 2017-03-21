@@ -21,7 +21,7 @@ void test2(){ //test klasy hangar
     cout<<"Samolot s2"<<endl<<s2;
 }
 
-void test1(){ //test operatorów = i == dlaklasy samolot
+void test1(){ //test przeciążania operatorów dlaklasy samolot
     samolot a;
     samolot b;
 
@@ -45,19 +45,19 @@ void test1(){ //test operatorów = i == dlaklasy samolot
         cout<<"Inne"<<endl;
 }
 
-void test3(){ //test pojemnośći hangaru
+void test3(){ //test pojemnośći hangaru i pola statycznego
     hangar f;
     samolot g;
     g.getp().setpredkosc_max(99);
     cout<<"Jest tyle obiektów typu samolot "<<g.ileObiektow()<<endl;
-    f+=g;
+    samolot* s = new samolot;
     cout<<"Jest tyle obiektów typu samolot "<<g.ileObiektow()<<endl;
+    f+=g;
     f.setl_miejsc(3);
     f+=g;
     f+=g;
     f+=g;
     f+=g;
-    samolot* s = new samolot;
     f-=(*s);
     cout<<"Samolot s"<<endl<<(*s);
     cout<<"Jest tyle obiektów typu samolot "<<g.ileObiektow()<<endl;
@@ -65,5 +65,10 @@ void test3(){ //test pojemnośći hangaru
 void test4(){
     hangar* h = new hangar("H1", 5);
     samolot* s = new samolot("S1", "LOT");
+    s->getp().setpredkosc_max(123);
+    s->getw().setsiedzenia_E(100);
     (*h)+=(*s);
+    samolot s2;
+    (*h)-=s2;
+    cout<<s2;
 }

@@ -46,7 +46,7 @@ parametry& parametry::operator=(const parametry &p){ // przeciążenie operatora
     return *this;
 }
 
-ostream& operator<< (ostream &os,  parametry &s){
+ostream& operator<< (ostream &os,  parametry &s){ // przeciązenie operatora <<
     os<<"Vmax: "<<s.getpredkosc_max()<<" Rmax: "<<s.getzasieg_max()<<endl;
 
     return os;

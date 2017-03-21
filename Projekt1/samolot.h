@@ -7,8 +7,8 @@ class samolot
     string nazwa;
     string wlasciciel;
     static int licznik; //Liczba stworzonych obiektow
-    parametry p;
-    wersja w;
+    parametry p; // parametry samolotu
+    wersja w;    // wersja wyposażenia
 
 public:
     samolot(string n="BRAK", string w="BRAK");

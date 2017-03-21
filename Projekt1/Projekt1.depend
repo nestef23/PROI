@@ -119,3 +119,47 @@
 	"hangar.h"
 	<iostream>
 
+1490121868 source:/home/krzysztof/Pulpit/Projekt1/hangar.cpp
+	<iostream>
+	"hangar.h"
+
+1490121895 /home/krzysztof/Pulpit/Projekt1/hangar.h
+	"samolot.h"
+	<ostream>
+	<vector>
+
+1490121926 /home/krzysztof/Pulpit/Projekt1/samolot.h
+	"parametry.h"
+	"wersja.h"
+	<string>
+
+1490117895 /home/krzysztof/Pulpit/Projekt1/parametry.h
+	<ostream>
+
+1490117889 /home/krzysztof/Pulpit/Projekt1/wersja.h
+	<ostream>
+
+1490122233 source:/home/krzysztof/Pulpit/Projekt1/main.cpp
+	<iostream>
+	"testy.h"
+	"hangar.h"
+
+1490118101 /home/krzysztof/Pulpit/Projekt1/testy.h
+
+1490121789 source:/home/krzysztof/Pulpit/Projekt1/parametry.cpp
+	<iostream>
+	"parametry.h"
+
+1490121851 source:/home/krzysztof/Pulpit/Projekt1/samolot.cpp
+	<iostream>
+	"samolot.h"
+
+1490121716 source:/home/krzysztof/Pulpit/Projekt1/testy.cpp
+	"testy.h"
+	"hangar.h"
+	<iostream>
+
+1490121784 source:/home/krzysztof/Pulpit/Projekt1/wersja.cpp
+	<iostream>
+	"wersja.h"
+

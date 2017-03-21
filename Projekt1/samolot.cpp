@@ -1,7 +1,5 @@
 #include <iostream>
 #include "samolot.h"
-//#include "parametry.h"
-//#include "wersja.h"
 #define _DEBUG
 using namespace std;
 
@@ -25,26 +23,26 @@ int  samolot::ileObiektow(){ //funkcja zwracająca liczbe stworzonych obiektow t
     return samolot::licznik;
 }
 
-void samolot::setnazwa(string n){
+void samolot::setnazwa(string n){ //setter
     samolot::nazwa = n;
 }
-void samolot::setwlasciciel(string w){
+void samolot::setwlasciciel(string w){ //setter
     samolot::wlasciciel = w;
 }
-string samolot::getnazwa()const{
+string samolot::getnazwa()const{ //getter
     return samolot::nazwa;
 }
-string samolot::getwlasciciel()const{
+string samolot::getwlasciciel()const{ //getter
     return samolot::wlasciciel;
 }
-parametry& samolot::getp(){
+parametry& samolot::getp(){ //getter
     return samolot::p;
 }
-wersja& samolot::getw(){
+wersja& samolot::getw(){ //getter
     return samolot::w;
 }
 
-bool samolot::operator==(samolot &s) {
+bool samolot::operator==(samolot &s) {  // przeciązenie operatora ==
     bool kopia = 1;
     if(p!=s.getp())
         kopia =0;
@@ -53,14 +51,14 @@ bool samolot::operator==(samolot &s) {
     return kopia;
 }
 
-samolot& samolot::operator=(samolot &s){
+samolot& samolot::operator=(samolot &s){ // przeciązenie operatora =
     p = s.getp();
     w = s.getw();
 
     return *this;
 }
 
-ostream& operator<< (ostream &os, samolot &s){
+ostream& operator<< (ostream &os, samolot &s){ // przeciązenie operatora <<
     cout<<"Nazwa: "<<s.getnazwa()<<" Wlasciciel: "<<s.getwlasciciel()<<endl;
     cout<<s.getp()<<s.getw()<<endl;
 

@@ -6,7 +6,7 @@
 using namespace std;
 
 int samolot::licznik = 0;
-static samolot s;
+static samolot s; //2 obiekty statyczne
 static samolot* s2 = new samolot;
 
 int main()
@@ -30,6 +30,9 @@ int main()
         }
         else if(s=="test3"){
             test3();
+        }
+        else if(s=="test4"){
+            test4();
         }
     }
 

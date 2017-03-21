@@ -20,16 +20,16 @@ hangar::~hangar(){ //konstruktor
     #endif // _DEBUG
 }
 
-void hangar::setnazwa_lotniska(string s){
+void hangar::setnazwa_lotniska(string s){ //setter
     nazwa_lotniska = s;
 }
-void hangar::setl_miejsc(int l){
+void hangar::setl_miejsc(int l){ //setter
         l_miejsc = l;
 }
-string hangar::getnazwa_lotniska() const{
+string hangar::getnazwa_lotniska() const{ //getter
         return nazwa_lotniska;
 }
-int hangar::getl_miejsc() const{
+int hangar::getl_miejsc() const{ //getter
      return l_miejsc;
 }
 
@@ -57,7 +57,7 @@ hangar& hangar::operator-=(samolot &s){ //dodawanie samolotu do hangaru
     return *this;
 }
 
-ostream& operator<< (ostream &os,  hangar &h){
+ostream& operator<< (ostream &os,  hangar &h){ // przeciązenie operatora <<
     os<<"---HANGAR----------------------------"<<endl;
     os<<"Nazwa: "<<h.getnazwa_lotniska()<<" L. miejsc: "<<h.getl_miejsc()<<endl<<endl;
     for (int i=0; i<h.wolne; i++){

@@ -5,7 +5,7 @@ using namespace std;
 class hangar
 {
     string nazwa_lotniska;
-    int l_miejsc;
+    int l_miejsc; //maksymalna liczba elementów wektora
     int wolne;
     vector<samolot*>  han;
 public:
