@@ -45,3 +45,9 @@ wersja& wersja::operator=(const wersja &w){ // przeciążenie operatora =
     siedzenia_E = w.siedzenia_E;
     return *this;
 }
+
+ostream& operator<< (ostream &os,  wersja &s){
+    os<<"Siedzenia B: "<<s.getsiedzienia_B()<<" Siedzenia S: "<<s.getsiedzienia_E()<<endl;
+
+    return os;
+}

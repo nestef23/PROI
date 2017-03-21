@@ -1,3 +1,4 @@
+#include <ostream>
 class parametry
 {
     int predkosc_max;
@@ -14,6 +15,8 @@ public:
 
     bool operator!=(const parametry &p) const;
     parametry& operator=(const parametry &p);
+
+    friend std::ostream& operator<<(std::ostream &os,  parametry &s);
 };
 
 

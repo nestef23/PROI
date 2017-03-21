@@ -21,7 +21,7 @@ public:
     hangar& operator-=(samolot &s);
 
     friend
-    std::ostream& operator<<(std::ostream &os, const hangar &h);
+    std::ostream& operator<<(std::ostream &os, hangar &h);
 
 
 

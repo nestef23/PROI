@@ -1,3 +1,4 @@
+#include <ostream>
 class wersja
 {
 public:
@@ -15,4 +16,6 @@ public:
 
     bool operator!=(const wersja &w) const;
     wersja& operator=(const wersja &w);
+
+    friend std::ostream& operator<<(std::ostream &os,  wersja &s);
 };

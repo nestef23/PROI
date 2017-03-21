@@ -30,5 +30,5 @@ public:
     bool operator==(samolot &s) ;
 
     friend
-    std::ostream& operator<<(std::ostream &os, const samolot &s);
+    std::ostream& operator<<(std::ostream &os, samolot &s);
 }; //samolot

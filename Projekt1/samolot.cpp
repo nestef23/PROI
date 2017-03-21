@@ -60,8 +60,9 @@ samolot& samolot::operator=(samolot &s){
     return *this;
 }
 
-ostream& operator<< (ostream &os, const samolot &s){
-    os<<s.getnazwa()<<" "<<s.getwlasciciel()<<endl;
+ostream& operator<< (ostream &os, samolot &s){
+    cout<<"Nazwa: "<<s.getnazwa()<<" Wlasciciel: "<<s.getwlasciciel()<<endl;
+    cout<<s.getp()<<s.getw()<<endl;
 
     return os;
 }
