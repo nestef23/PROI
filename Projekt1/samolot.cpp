@@ -3,18 +3,16 @@
 #define _DEBUG
 using namespace std;
 
-samolot::samolot(string n, string w){ //konstruktor
+samolot::samolot(string n, string w, int p, int z):nazwa(n), wlasciciel(w), predkosc(p), zasieg(z){ //konstruktor
     #ifdef _DEBUG
-    cout<<"Stworzono obiekt samolot"<<endl;
+    cout<<"Stworzono samolot"<<endl;
     #endif // _DEBUG
-    nazwa = n;
-    wlasciciel =w;
     licznik++;
 }
 
 samolot::~samolot(){ //destruktor
     #ifdef _DEBUG
-    cout<<"Usunieto obiekt samolot"<<endl;
+    cout<<"Usunieto samolot"<<endl;
     #endif // _DEBUG
     licznik--;
 }
@@ -29,38 +27,45 @@ void samolot::setnazwa(string n){ //setter
 void samolot::setwlasciciel(string w){ //setter
     samolot::wlasciciel = w;
 }
+void samolot::setzasieg(int z){ //setter
+    samolot::zasieg = z;
+}
+void samolot::setpredkosc(int p){ //setter
+    samolot::predkosc = p;
+}
+
 string samolot::getnazwa()const{ //getter
     return samolot::nazwa;
 }
 string samolot::getwlasciciel()const{ //getter
     return samolot::wlasciciel;
 }
-parametry& samolot::getp(){ //getter
-    return samolot::p;
+int samolot::getzasieg()const{ //getter
+    return samolot::zasieg;
 }
-wersja& samolot::getw(){ //getter
-    return samolot::w;
+int samolot::getpredkosc()const{ //getter
+    return samolot::predkosc;
 }
 
 bool samolot::operator==(samolot &s) {  // przeciązenie operatora ==
     bool kopia = 1;
-    if(p!=s.getp())
+    if(predkosc!=s.getpredkosc())
         kopia =0;
-    if(w!=s.getw())
+    if(zasieg!=s.getzasieg())
         kopia =0;
     return kopia;
 }
 
 samolot& samolot::operator=(samolot &s){ // przeciązenie operatora =
-    p = s.getp();
-    w = s.getw();
+    predkosc = s.getpredkosc();
+    zasieg = s.getzasieg();
 
     return *this;
 }
 
 ostream& operator<< (ostream &os, samolot &s){ // przeciązenie operatora <<
     cout<<"Nazwa: "<<s.getnazwa()<<" Wlasciciel: "<<s.getwlasciciel()<<endl;
-    cout<<s.getp()<<s.getw()<<endl;
+    cout<<"Predkosc: "<<s.getpredkosc()<<"Zasieg: "<<s.getzasieg()<<endl;
 
     return os;
 }

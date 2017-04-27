@@ -68,18 +68,16 @@
 	<iostream>
 	"wersja.h"
 
-1490120055 source:/home/krzysztof/Pulpit/PROI/PROI/Projekt1/hangar.cpp
+1490121868 source:/home/krzysztof/Pulpit/PROI/PROI/Projekt1/hangar.cpp
 	<iostream>
 	"hangar.h"
 
-1490117715 /home/krzysztof/Pulpit/PROI/PROI/Projekt1/hangar.h
+1490121895 /home/krzysztof/Pulpit/PROI/PROI/Projekt1/hangar.h
 	"samolot.h"
 	<ostream>
 	<vector>
 
-1490117805 /home/krzysztof/Pulpit/PROI/PROI/Projekt1/samolot.h
-	"parametry.h"
-	"wersja.h"
+1493298704 /home/krzysztof/Pulpit/PROI/PROI/Projekt1/samolot.h
 	<string>
 
 1490117895 /home/krzysztof/Pulpit/PROI/PROI/Projekt1/parametry.h
@@ -88,26 +86,26 @@
 1490117889 /home/krzysztof/Pulpit/PROI/PROI/Projekt1/wersja.h
 	<ostream>
 
-1490120906 source:/home/krzysztof/Pulpit/PROI/PROI/Projekt1/main.cpp
+1493298573 source:/home/krzysztof/Pulpit/PROI/PROI/Projekt1/main.cpp
 	<iostream>
 	"testy.h"
-	"hangar.h"
+	"lotnisko.h"
 
-1490121185 source:/home/krzysztof/Pulpit/PROI/PROI/Projekt1/parametry.cpp
+1490121789 source:/home/krzysztof/Pulpit/PROI/PROI/Projekt1/parametry.cpp
 	<iostream>
 	"parametry.h"
 
-1490119943 source:/home/krzysztof/Pulpit/PROI/PROI/Projekt1/samolot.cpp
+1493298767 source:/home/krzysztof/Pulpit/PROI/PROI/Projekt1/samolot.cpp
 	<iostream>
 	"samolot.h"
 
-1490121184 source:/home/krzysztof/Pulpit/PROI/PROI/Projekt1/wersja.cpp
+1490121784 source:/home/krzysztof/Pulpit/PROI/PROI/Projekt1/wersja.cpp
 	<iostream>
 	"wersja.h"
 
-1490118101 /home/krzysztof/Pulpit/PROI/PROI/Projekt1/testy.h
+1493297158 /home/krzysztof/Pulpit/PROI/PROI/Projekt1/testy.h
 
-1490120142 source:/home/krzysztof/Pulpit/PROI/PROI/Projekt1/testy.cpp
+1490122322 source:/home/krzysztof/Pulpit/PROI/PROI/Projekt1/testy.cpp
 	"testy.h"
 	"hangar.h"
 	<iostream>
@@ -162,4 +160,13 @@
 1490121784 source:/home/krzysztof/Pulpit/Projekt1/wersja.cpp
 	<iostream>
 	"wersja.h"
+
+1493298527 source:/home/krzysztof/Pulpit/PROI/PROI/Projekt1/lotnisko.cpp
+	<iostream>
+	"lotnisko.h"
+
+1493298522 /home/krzysztof/Pulpit/PROI/PROI/Projekt1/lotnisko.h
+	"samolot.h"
+	<ostream>
+	<vector>
 

@@ -1,12 +1,12 @@
 #include <iostream>
-#include "hangar.h"
+#include "lotnisko.h"
 
 #define _DEBUG
 using namespace std;
 
-hangar::hangar(string nazwa, int n){ //konstruktor
+lotnisko::lotnisko(string nazwa, int n){ //konstruktor
     #ifdef _DEBUG
-    cout<<"Stworzono obiekt hangar"<<endl;
+    cout<<"Stworzono lotnisko"<<endl;
     #endif // _DEBUG
     nazwa_lotniska = nazwa;
     l_miejsc=n;
@@ -14,26 +14,26 @@ hangar::hangar(string nazwa, int n){ //konstruktor
 
 }
 
-hangar::~hangar(){ //konstruktor
+lotnisko::~lotnisko(){ //konstruktor
     #ifdef _DEBUG
-    cout<<"Usunieto obiekt hangar"<<endl;
+    cout<<"Usunieto lotnisko"<<endl;
     #endif // _DEBUG
 }
 
-void hangar::setnazwa_lotniska(string s){ //setter
+void lotnisko::setnazwa_lotniska(string s){ //setter
     nazwa_lotniska = s;
 }
-void hangar::setl_miejsc(int l){ //setter
+void lotnisko::setl_miejsc(int l){ //setter
         l_miejsc = l;
 }
-string hangar::getnazwa_lotniska() const{ //getter
+string lotnisko::getnazwa_lotniska() const{ //getter
         return nazwa_lotniska;
 }
-int hangar::getl_miejsc() const{ //getter
+int lotnisko::getl_miejsc() const{ //getter
      return l_miejsc;
 }
 
-hangar& hangar::operator+=(samolot &s){ //dodawanie samolotu do hangaru
+lotnisko& lotnisko::operator+=(samolot &s){ //dodawanie samolotu do lotniskou
     if(wolne<l_miejsc){
         han.push_back(&s);
         wolne++;
@@ -45,7 +45,7 @@ hangar& hangar::operator+=(samolot &s){ //dodawanie samolotu do hangaru
     return *this;
 }
 
-hangar& hangar::operator-=(samolot &s){ //dodawanie samolotu do hangaru
+lotnisko& lotnisko::operator-=(samolot &s){ //dodawanie samolotu do lotniskou
     if(wolne>0){
         s=(*han.back());
         han.pop_back();
@@ -57,8 +57,8 @@ hangar& hangar::operator-=(samolot &s){ //dodawanie samolotu do hangaru
     return *this;
 }
 
-ostream& operator<< (ostream &os,  hangar &h){ // przeciązenie operatora <<
-    os<<"---HANGAR----------------------------"<<endl;
+ostream& operator<< (ostream &os,  lotnisko &h){ // przeciązenie operatora <<
+    os<<"---lotnisko----------------------------"<<endl;
     os<<"Nazwa: "<<h.getnazwa_lotniska()<<" L. miejsc: "<<h.getl_miejsc()<<endl<<endl;
     for (int i=0; i<h.wolne; i++){
         cout<<(*h.han[i]);
