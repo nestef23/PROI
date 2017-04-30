@@ -32,11 +32,17 @@
 			<Add option="-Wall" />
 			<Add option="-fexceptions" />
 		</Compiler>
+		<Unit filename="hostessa.cpp" />
+		<Unit filename="hostessa.h" />
 		<Unit filename="lotnisko.cpp" />
 		<Unit filename="lotnisko.h" />
 		<Unit filename="main.cpp" />
-		<Unit filename="samolot.cpp" />
-		<Unit filename="samolot.h" />
+		<Unit filename="pilot.cpp" />
+		<Unit filename="pilot.h" />
+		<Unit filename="samolotP.cpp" />
+		<Unit filename="samolotP.h" />
+		<Unit filename="samolotT.cpp" />
+		<Unit filename="samolotT.h" />
 		<Unit filename="testy.cpp" />
 		<Unit filename="testy.h" />
 		<Extensions>

@@ -1,12 +1,11 @@
 #include <iostream>
 #include "testy.h"
-#include "lotnisko.h"
+//#include "lotnisko.h"
 
 #define _DEBUG
 using namespace std;
 
-int samolot::licznik = 0;
-
+int samolotP::licznik = 0;
 
 int main()
 {
@@ -21,6 +20,23 @@ int main()
     while (s!="q"){
         cout<<"Wpisz nazwę testu, który chcesz wykonać"<<endl;
         cin>>s;
+        if (s=="test1"){
+            test1();
+        }
+        if (s=="test2"){
+            test2();
+        }
+        if (s=="test3"){
+            test3();
+        }
+        if (s=="test4"){
+            test4();
+        }
+        if (s=="test5"){
+            test1();
+        }
+        if (s=="test6"){
+            test1();
         }
     }
 

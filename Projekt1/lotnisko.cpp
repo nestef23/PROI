@@ -4,7 +4,8 @@
 #define _DEBUG
 using namespace std;
 
-lotnisko::lotnisko(string nazwa, int n){ //konstruktor
+template <class T>
+lotnisko<T>::lotnisko(string nazwa, int n){ //konstruktor
     #ifdef _DEBUG
     cout<<"Stworzono lotnisko"<<endl;
     #endif // _DEBUG
@@ -14,26 +15,31 @@ lotnisko::lotnisko(string nazwa, int n){ //konstruktor
 
 }
 
-lotnisko::~lotnisko(){ //konstruktor
+template <class T>
+lotnisko<T>::~lotnisko(){ //konstruktor
     #ifdef _DEBUG
     cout<<"Usunieto lotnisko"<<endl;
     #endif // _DEBUG
 }
-
-void lotnisko::setnazwa_lotniska(string s){ //setter
+template <class T>
+void lotnisko<T>::setnazwa_lotniska(string s){ //setter
     nazwa_lotniska = s;
 }
-void lotnisko::setl_miejsc(int l){ //setter
+template <class T>
+void lotnisko<T>::setl_miejsc(int l){ //setter
         l_miejsc = l;
 }
-string lotnisko::getnazwa_lotniska() const{ //getter
+template <class T>
+string lotnisko<T>::getnazwa_lotniska() const{ //getter
         return nazwa_lotniska;
 }
-int lotnisko::getl_miejsc() const{ //getter
+template <class T>
+int lotnisko<T>::getl_miejsc() const{ //getter
      return l_miejsc;
 }
 
-lotnisko& lotnisko::operator+=(samolot &s){ //dodawanie samolotu do lotniskou
+template <class T>
+lotnisko<T>& lotnisko<T>::operator+=(T& s){ //dodawanie samolotu do lotniskou
     if(wolne<l_miejsc){
         han.push_back(&s);
         wolne++;
@@ -45,23 +51,32 @@ lotnisko& lotnisko::operator+=(samolot &s){ //dodawanie samolotu do lotniskou
     return *this;
 }
 
-lotnisko& lotnisko::operator-=(samolot &s){ //dodawanie samolotu do lotniskou
-    if(wolne>0){
-        s=(*han.back());
-        han.pop_back();
-        wolne--;
-    }
-    else{
-        cout<<"Brak elementów"<<endl;
-    }
-    return *this;
+template <class T>
+void lotnisko<T>::deletesamolotP(int i){
+    lotnisko::han.erase(han.begin()+i);
+    lotnisko::wolne--;
 }
 
-ostream& operator<< (ostream &os,  lotnisko &h){ // przeciązenie operatora <<
-    os<<"---lotnisko----------------------------"<<endl;
-    os<<"Nazwa: "<<h.getnazwa_lotniska()<<" L. miejsc: "<<h.getl_miejsc()<<endl<<endl;
-    for (int i=0; i<h.wolne; i++){
-        cout<<(*h.han[i]);
+
+ostream& operator<< (ostream& os,  lotnisko<samolotP>& l){ // przeciązenie operatora <<
+    os<<"---lotnisko-----samolotP-----------------------"<<endl;
+    os<<"Nazwa: "<<l.getnazwa_lotniska()<<" L. miejsc: "<<l.getl_miejsc()<<endl<<endl;
+    for (int i=0; i<l.wolne; i++){
+        cout<<(*l.han[i]);
     }
     return os;
 }
+
+ostream& operator<< (ostream& os,  lotnisko<samolotT>& l){ // przeciązenie operatora <<
+    os<<"---lotnisko-----samolotT-----------------------"<<endl;
+    os<<"Nazwa: "<<l.getnazwa_lotniska()<<" L. miejsc: "<<l.getl_miejsc()<<endl<<endl;
+    for (int i=0; i<l.wolne; i++){
+        cout<<(*l.han[i]);
+    }
+    return os;
+}
+
+
+template class lotnisko<samolotP>;
+template class lotnisko<samolotT>;
+
