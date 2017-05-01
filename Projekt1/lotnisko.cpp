@@ -52,7 +52,7 @@ lotnisko<T>& lotnisko<T>::operator+=(T& s){ //dodawanie samolotu do lotniskou
 }
 
 template <class T>
-void lotnisko<T>::deletesamolotP(int i){
+void lotnisko<T>::deletesamolot(int i){
     lotnisko::han.erase(han.begin()+i);
     lotnisko::wolne--;
 }

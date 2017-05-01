@@ -3,7 +3,7 @@
 #define _DEBUG
 using namespace std;
 
-samolotT::samolotT(string n, string w, int p, int z, int l, bool m):nazwa(n), wlasciciel(w), predkosc(p), zasieg(z), ladownosc(l), mrozone(m){ //konstruktor
+samolotT::samolotT(string n, string w, int p, int z, int l, bool m, int ll):nazwa(n), wlasciciel(w), predkosc(p), zasieg(z), ladownosc(l), mrozone(m), ladunek(ll){ //konstruktor
     #ifdef _DEBUG
     cout<<"Stworzono samolotT"<<endl;
     #endif // _DEBUG
@@ -57,6 +57,12 @@ bool samolotT::getmrozone()const{ //getter
     return samolotT::mrozone;
 }
 
+
+
+double samolotT::getladunek()const{
+    return samolotT::ladunek;
+}
+
 bool samolotT::operator==(samolotT &s) {  // przeciązenie operatora ==
     bool kopia = 1;
     if(predkosc!=s.getpredkosc())
@@ -80,8 +86,10 @@ samolotT& samolotT::operator=(samolotT &s){ // przeciązenie operatora =
 ostream& operator<< (ostream &os, samolotT &s){ // przeciązenie operatora <<
     cout<<"Nazwa: "<<s.getnazwa()<<" ,Wlasciciel: "<<s.getwlasciciel()<<endl;
     cout<<"Predkosc: "<<s.getpredkosc()<<" ,Zasieg: "<<s.getzasieg()<<endl;
-    cout<<"Ladownosc: "<<s.getladownosc()<<" ,Mrozone: "<<s.getmrozone()<<endl;
+    cout<<"Ladownosc: "<<s.getladownosc()<<" ,Mrozone: "<<s.getmrozone()<<endl<<endl;
 
     return os;
 }
+
+
 

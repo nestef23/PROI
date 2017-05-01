@@ -34,7 +34,7 @@ l+=s1;
 l+=s2;
 l+=s3;
 cout<<l<<endl;
-l.deletesamolotP(0);
+l.deletesamolot(0);
 cout<<l<<endl;
 }
 
@@ -58,8 +58,25 @@ samolotT s2("s2");
 l1+=s1;
 l2+=s2;
 
-//l1+=s2;
-//l2+=s1;
+cout<<l1<<l2;
+
+l1.deletesamolot(0);
+l2.deletesamolot(0);
 
 cout<<l1<<l2;
+}
+
+void test5(){
+    samolotT s1("A156", "LOT", 300, 2000, 1000, 1, 0);
+    int ladunek1 = 20;
+    float ladunek2 = 5.6;
+    double ladunek3 = 0.0001;
+    s1.addladunek(ladunek1);
+    s1.addladunek(ladunek2);
+    s1.addladunek(ladunek3);
+    cout<<"Ladunek samolotu: "<<s1.getladunek()<<endl;
+    s1.deleteladunek(30);
+    s1.deleteladunek(10);
+     cout<<"Ladunek samolotu: "<<s1.getladunek()<<endl;
+
 }

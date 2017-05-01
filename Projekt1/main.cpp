@@ -33,7 +33,7 @@ int main()
             test4();
         }
         if (s=="test5"){
-            test1();
+            test5();
         }
         if (s=="test6"){
             test1();

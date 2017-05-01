@@ -77,7 +77,7 @@ samolotP& samolotP::operator=(samolotP &s){ // przeciązenie operatora =
 ostream& operator<< (ostream &os, samolotP &s){ // przeciązenie operatora <<
     cout<<"Nazwa: "<<s.getnazwa()<<" ,Wlasciciel: "<<s.getwlasciciel()<<endl;
     cout<<"Predkosc: "<<s.getpredkosc()<<" ,Zasieg: "<<s.getzasieg()<<endl;
-    cout<<"Liczba zalogi: "<<s.ilezaloga()+1<<endl;
+    cout<<"Liczba hostess: "<<s.ilezaloga()<<endl<<endl;
 
 
     return os;

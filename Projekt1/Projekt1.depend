@@ -51,7 +51,7 @@
 
 1489852715 /home/krzysiek/Pulpit/Projekt1git/Projekt1/wersja.h
 
-1493581162 source:/home/krzysiek/Pulpit/Projekt1git/Projekt1/main.cpp
+1493658990 source:/home/krzysiek/Pulpit/Projekt1git/Projekt1/main.cpp
 	<iostream>
 	"testy.h"
 
@@ -109,10 +109,10 @@
 	"hangar.h"
 	<iostream>
 
-1493581156 /home/krzysiek/Pulpit/Projekt1git/Projekt1/testy.h
+1493658984 /home/krzysiek/Pulpit/Projekt1git/Projekt1/testy.h
 	"lotnisko.h"
 
-1493585396 source:/home/krzysiek/Pulpit/Projekt1git/Projekt1/testy.cpp
+1493658999 source:/home/krzysiek/Pulpit/Projekt1git/Projekt1/testy.cpp
 	"testy.h"
 	<iostream>
 
@@ -169,11 +169,11 @@
 	<ostream>
 	<vector>
 
-1493585497 source:/home/krzysiek/Pulpit/Projekt1git/Projekt1/lotnisko.cpp
+1493658363 source:/home/krzysiek/Pulpit/Projekt1git/Projekt1/lotnisko.cpp
 	<iostream>
 	"lotnisko.h"
 
-1493585876 /home/krzysiek/Pulpit/Projekt1git/Projekt1/lotnisko.h
+1493658368 /home/krzysiek/Pulpit/Projekt1git/Projekt1/lotnisko.h
 	"samolotT.h"
 	<ostream>
 	<vector>
@@ -198,15 +198,16 @@
 	"pilot.h"
 	"hostessa.h"
 
-1493586389 source:/home/krzysiek/Pulpit/Projekt1git/Projekt1/samolotP.cpp
+1493658481 source:/home/krzysiek/Pulpit/Projekt1git/Projekt1/samolotP.cpp
 	<iostream>
 	"samolotP.h"
 
-1493583824 source:/home/krzysiek/Pulpit/Projekt1git/Projekt1/samolotT.cpp
+1493659590 source:/home/krzysiek/Pulpit/Projekt1git/Projekt1/samolotT.cpp
 	<iostream>
 	"samolotT.h"
 
-1493586513 /home/krzysiek/Pulpit/Projekt1git/Projekt1/samolotT.h
+1493659742 /home/krzysiek/Pulpit/Projekt1git/Projekt1/samolotT.h
+	<iostream>
 	<string>
 	"samolotP.h"
 

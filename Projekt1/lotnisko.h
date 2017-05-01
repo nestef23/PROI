@@ -17,7 +17,7 @@ public:
 
     void setnazwa_lotniska(string);
     void setl_miejsc(int);
-    void deletesamolotP(int);
+    void deletesamolot(int);
 
     string getnazwa_lotniska() const;
     int getl_miejsc() const;
