@@ -1,95 +1,116 @@
-#include <iostream>
-#include "samolotT.h"
-#define _DEBUG
+#ifndef samT
+#define samT
+#include "samolotA.cpp"
 using namespace std;
 
-samolotT::samolotT(string n, string w, int p, int z, int l, bool m, int ll):nazwa(n), wlasciciel(w), predkosc(p), zasieg(z), ladownosc(l), mrozone(m), ladunek(ll){ //konstruktor
-    #ifdef _DEBUG
-    cout<<"Stworzono samolotT"<<endl;
-    #endif // _DEBUG
-}
 
-samolotT::~samolotT(){ //destruktor
-    #ifdef _DEBUG
-    cout<<"Usunieto samolotT"<<endl;
-    #endif // _DEBUG
-}
+class samolotT : public samolotA
+{
+public:
+    int ladownosc;
+    bool mrozone;
+    double ladunek;
 
-void samolotT::setnazwa(string n){ //setter
-    samolotT::nazwa = n;
-}
-void samolotT::setwlasciciel(string w){ //setter
-    samolotT::wlasciciel = w;
-}
-void samolotT::setzasieg(int z){ //setter
-    samolotT::zasieg = z;
-}
-void samolotT::setpredkosc(int p){ //setter
-    samolotT::predkosc = p;
-}
 
-void samolotT::setladownosc(int l){ //setter
-    samolotT::ladownosc = l;
-}
+    samolotT(string n="BRAK", string w="BRAK", int p=0, int z=0, int l=0, bool m=0, int ll=0) : samolotA( n,  w,  p, z){ //konstruktor
 
-void samolotT::setmrozone(bool m){ //setter
-    samolotT::mrozone = p;
-}
+        ladownosc = l;
+        mrozone = m;
+        ladunek = ll;
 
-string samolotT::getnazwa()const{ //getter
-    return samolotT::nazwa;
-}
-string samolotT::getwlasciciel()const{ //getter
-    return samolotT::wlasciciel;
-}
-int samolotT::getzasieg()const{ //getter
-    return samolotT::zasieg;
-}
-int samolotT::getpredkosc()const{ //getter
-    return samolotT::predkosc;
-}
+        #ifdef _DEBUG
+        cout<<"Stworzono samolotT"<<endl;
+        #endif // _DEBUG
+    }
 
-int samolotT::getladownosc()const{ //getter
-    return samolotT::ladownosc;
-}
-
-bool samolotT::getmrozone()const{ //getter
-    return samolotT::mrozone;
-}
+    ~samolotT(){ //destruktor
+        #ifdef _DEBUG
+        cout<<"Usunieto samolotT"<<endl;
+        #endif // _DEBUG
+    }
 
 
 
-double samolotT::getladunek()const{
-    return samolotT::ladunek;
-}
+    void setladownosc(int l){ //setter
+        ladownosc = l;
+    }
 
-bool samolotT::operator==(samolotT &s) {  // przeciązenie operatora ==
-    bool kopia = 1;
-    if(predkosc!=s.getpredkosc())
-        kopia =0;
-    if(zasieg!=s.getzasieg())
-        kopia =0;
-    if(ladownosc!=s.getladownosc())
-        kopia =0;
-    if(mrozone!=s.getmrozone())
-        kopia =0;
-    return kopia;
-}
+    void setmrozone(bool m){ //setter
+        mrozone = m;
+    }
 
-samolotT& samolotT::operator=(samolotT &s){ // przeciązenie operatora =
-    predkosc = s.getpredkosc();
-    zasieg = s.getzasieg();
 
-    return *this;
-}
 
-ostream& operator<< (ostream &os, samolotT &s){ // przeciązenie operatora <<
+    int getladownosc()const{ //getter
+        return ladownosc;
+    }
+
+    bool getmrozone()const{ //getter
+        return mrozone;
+    }
+
+
+
+    double getladunek()const{
+        return ladunek;
+    }
+
+    bool operator==(samolotT &s) {  // przeciązenie operatora ==
+        bool kopia = 1;
+        if(predkosc!=s.getpredkosc())
+            kopia =0;
+        if(zasieg!=s.getzasieg())
+            kopia =0;
+        if(ladownosc!=s.getladownosc())
+            kopia =0;
+        if(mrozone!=s.getmrozone())
+            kopia =0;
+        return kopia;
+    }
+
+    samolotT& operator=(samolotT &s){ // przeciązenie operatora =
+        predkosc = s.getpredkosc();
+        zasieg = s.getzasieg();
+        ladownosc = s.getladownosc();
+        mrozone = s.getmrozone();
+
+        return *this;
+    }
+
+    template <class T>
+    void addladunek(T l){
+        if(ladunek+l<=ladownosc){
+            ladunek +=l;
+        }
+        else{
+            cout<<"Brak miejsca"<<endl;
+        }
+    }
+
+    template <class T>
+    void deleteladunek(T l){
+        if(ladunek-l>=0){
+            ladunek -=l;
+        }
+        else{
+            cout<<"Brak ladunku"<<endl;
+        }
+    }
+
+  /*  ostream& operator<< (ostream &os, samolotT &s){ // przeciązenie operatora <<
     cout<<"Nazwa: "<<s.getnazwa()<<" ,Wlasciciel: "<<s.getwlasciciel()<<endl;
     cout<<"Predkosc: "<<s.getpredkosc()<<" ,Zasieg: "<<s.getzasieg()<<endl;
     cout<<"Ladownosc: "<<s.getladownosc()<<" ,Mrozone: "<<s.getmrozone()<<endl<<endl;
 
     return os;
-}
+} */
 
+}; //samolotT
+
+
+
+
+
+#endif
 
 

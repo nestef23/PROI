@@ -37,14 +37,11 @@
 		<Unit filename="lotnisko.cpp" />
 		<Unit filename="lotnisko.h" />
 		<Unit filename="main.cpp" />
-		<Unit filename="pilot.cpp" />
-		<Unit filename="pilot.h" />
+		<Unit filename="samolotA.cpp" />
 		<Unit filename="samolotP.cpp" />
-		<Unit filename="samolotP.h" />
 		<Unit filename="samolotT.cpp" />
-		<Unit filename="samolotT.h" />
+		<Unit filename="samolotW.cpp" />
 		<Unit filename="testy.cpp" />
-		<Unit filename="testy.h" />
 		<Extensions>
 			<code_completion />
 			<envvars />

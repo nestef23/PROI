@@ -1,4 +1,4 @@
-#include <iostream>
+/*#include <iostream>
 #include "lotnisko.h"
 
 #define _DEBUG
@@ -80,3 +80,4 @@ ostream& operator<< (ostream& os,  lotnisko<samolotT>& l){ // przeciązenie oper
 template class lotnisko<samolotP>;
 template class lotnisko<samolotT>;
 
+*/

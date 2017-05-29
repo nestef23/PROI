@@ -1,85 +1,69 @@
-#include <iostream>
-#include "samolotP.h"
-#define _DEBUG
+#ifndef samP
+#define samP
+
+#include "hostessa.h"
+#include "samolotA.cpp"
 using namespace std;
 
-samolotP::samolotP(string n, string w, int p, int z):nazwa(n), wlasciciel(w), predkosc(p), zasieg(z){ //konstruktor
-    #ifdef _DEBUG
-    cout<<"Stworzono samolotP"<<endl;
-    #endif // _DEBUG
-    licznik++;
-}
+class samolotP : public samolotA
+{
 
-samolotP::~samolotP(){ //destruktor
-    #ifdef _DEBUG
-    cout<<"Usunieto samolotP"<<endl;
-    #endif // _DEBUG
-    licznik--;
-}
+public:
 
-int  samolotP::ileObiektow(){ //funkcja zwracająca liczbe stworzonych obiektow typu samolotP
-    return samolotP::licznik;
-}
+    vector<hostessa> zaloga;
 
-void samolotP::setnazwa(string n){ //setter
-    samolotP::nazwa = n;
-}
-void samolotP::setwlasciciel(string w){ //setter
-    samolotP::wlasciciel = w;
-}
-void samolotP::setzasieg(int z){ //setter
-    samolotP::zasieg = z;
-}
-void samolotP::setpredkosc(int p){ //setter
-    samolotP::predkosc = p;
-}
+    samolotP(string n="BRAK", string w="BRAK", int p=0, int z=0): samolotA(n,w,p,z){ //konstruktor
+        cout<<"Stworzono samolotP"<<endl;
+    }
 
-string samolotP::getnazwa()const{ //getter
-    return samolotP::nazwa;
-}
-string samolotP::getwlasciciel()const{ //getter
-    return samolotP::wlasciciel;
-}
-int samolotP::getzasieg()const{ //getter
-    return samolotP::zasieg;
-}
-int samolotP::getpredkosc()const{ //getter
-    return samolotP::predkosc;
-}
+    ~samolotP(){ //destruktor
+        cout<<"Usunieto samolotP"<<endl;
+    }
 
-void samolotP::addzaloga(hostessa h){
-    samolotP::zaloga.push_back(h);
-}
-void samolotP::deletezaloga(int i){
-    samolotP::zaloga.erase(zaloga.begin()+i);
-}
+    void addzaloga(hostessa h){
+        zaloga.push_back(h);
+    }
+    void deletezaloga(int i){
+        zaloga.erase(zaloga.begin()+i);
+    }
 
-int samolotP::ilezaloga()const{
-    return samolotP::zaloga.size();
-}
+    int ile()const{
+        return zaloga.size();
+    }
 
-bool samolotP::operator==(samolotP &s) {  // przeciązenie operatora ==
-    bool kopia = 1;
-    if(predkosc!=s.getpredkosc())
-        kopia =0;
-    if(zasieg!=s.getzasieg())
-        kopia =0;
-    return kopia;
-}
+    bool operator==(samolotP &s) {  // przeciązenie operatora ==
+        bool kopia = 1;
+        if(predkosc!=s.getpredkosc())
+            kopia =0;
+        if(zasieg!=s.getzasieg())
+            kopia =0;
+        return kopia;
+    }
 
-samolotP& samolotP::operator=(samolotP &s){ // przeciązenie operatora =
-    predkosc = s.getpredkosc();
-    zasieg = s.getzasieg();
+    samolotP& operator=(samolotP &s){ // przeciązenie operatora =
+        predkosc = s.getpredkosc();
+        zasieg = s.getzasieg();
 
-    return *this;
-}
+        return *this;
+    }
 
-ostream& operator<< (ostream &os, samolotP &s){ // przeciązenie operatora <<
+    void status()const{
+        cout<<"Samolot pasazerski"<<endl;
+    }
+/*
+    ostream& operator<< (ostream &os, samolotP &s){ // przeciązenie operatora <<
     cout<<"Nazwa: "<<s.getnazwa()<<" ,Wlasciciel: "<<s.getwlasciciel()<<endl;
     cout<<"Predkosc: "<<s.getpredkosc()<<" ,Zasieg: "<<s.getzasieg()<<endl;
-    cout<<"Liczba hostess: "<<s.ilezaloga()<<endl<<endl;
+    cout<<"Liczba hostess: "<<s.ile()<<endl<<endl;
 
 
     return os;
-}
+} */
+
+}; //samolotP
+
+
+
+
+#endif
 

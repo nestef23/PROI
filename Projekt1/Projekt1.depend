@@ -211,3 +211,78 @@
 	<string>
 	"samolotP.h"
 
+1496078668 source:/home/krzysiek/Pulpit/projekt 3333/PROI/Projekt1/hostessa.cpp
+	<iostream>
+	"hostessa.h"
+
+1496078668 /home/krzysiek/Pulpit/projekt 3333/PROI/Projekt1/hostessa.h
+	<string>
+	<vector>
+
+1496082561 source:/home/krzysiek/Pulpit/projekt 3333/PROI/Projekt1/lotnisko.cpp
+	"lotnisko.h"
+
+1496082547 /home/krzysiek/Pulpit/projekt 3333/PROI/Projekt1/lotnisko.h
+	<vector>
+
+1496080818 /home/krzysiek/Pulpit/projekt 3333/PROI/Projekt1/samolotT.h
+	<iostream>
+	<string>
+	"samlotA.cpp"
+
+1496080752 /home/krzysiek/Pulpit/projekt 3333/PROI/Projekt1/samolotP.h
+	"samlotA.cpp"
+
+1496078668 /home/krzysiek/Pulpit/projekt 3333/PROI/Projekt1/pilot.h
+	<string>
+
+1496078668 source:/home/krzysiek/Pulpit/projekt 3333/PROI/Projekt1/pilot.cpp
+	<iostream>
+	"pilot.h"
+
+1496087224 source:/home/krzysiek/Pulpit/projekt 3333/PROI/Projekt1/samolotP.cpp
+	"hostessa.h"
+	"samolotA.cpp"
+
+1496087311 source:/home/krzysiek/Pulpit/projekt 3333/PROI/Projekt1/samolotT.cpp
+	"samolotA.cpp"
+
+1496087562 source:/home/krzysiek/Pulpit/projekt 3333/PROI/Projekt1/main.cpp
+	<iostream>
+	"testy.cpp"
+
+1496078779 /home/krzysiek/Pulpit/projekt 3333/PROI/Projekt1/testy.h
+	"lotnisko.h"
+
+1496087332 source:/home/krzysiek/Pulpit/projekt 3333/PROI/Projekt1/samolotA.cpp
+	<iostream>
+	<string>
+
+1496079950 /home/krzysiek/Pulpit/projekt 3333/PROI/Projekt1/samolotA.h
+	<string>
+	"pilot.h"
+
+1496082578 source:/home/krzysiek/Pulpit/projekt 3333/PROI/Projekt1/testy.cpp
+	<iostream>
+
+1496087332 /home/krzysiek/Pulpit/projekt 3333/PROI/Projekt1/samolotA.cpp
+	<iostream>
+	<string>
+
+1496087311 /home/krzysiek/Pulpit/projekt 3333/PROI/Projekt1/samolotT.cpp
+	"samolotA.cpp"
+
+1496087224 /home/krzysiek/Pulpit/projekt 3333/PROI/Projekt1/samolotP.cpp
+	"hostessa.h"
+	"samolotA.cpp"
+
+1496087403 source:/home/krzysiek/Pulpit/projekt 3333/PROI/Projekt1/samolotW.cpp
+	"samolotT.cpp"
+
+1496087403 /home/krzysiek/Pulpit/projekt 3333/PROI/Projekt1/samolotW.cpp
+	"samolotT.cpp"
+
+1496087597 /home/krzysiek/Pulpit/projekt 3333/PROI/Projekt1/testy.cpp
+	"samolotP.cpp"
+	"samolotW.cpp"
+

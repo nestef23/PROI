@@ -1,6 +1,5 @@
-#include "samolotT.h"
-//#include "samolotP.h"
-#include <ostream>
+/* #include "samolotT.cpp"
+//#include <iostream>
 #include <vector>
 using namespace std;
 
@@ -30,3 +29,4 @@ public:
 
 
 };
+*/
