@@ -1,8 +1,6 @@
-/*nclude "lotnisko.h"
+#include "samolotT.cpp"
+#include "samolotP.cpp"
+#include "samolotA.cpp"
+#include "samolotW.cpp"
 
 void test1();
-void test2();
-void test3();
-void test4();
-void test5();
-*/

@@ -42,6 +42,7 @@
 		<Unit filename="samolotT.cpp" />
 		<Unit filename="samolotW.cpp" />
 		<Unit filename="testy.cpp" />
+		<Unit filename="testy.h" />
 		<Extensions>
 			<code_completion />
 			<envvars />

@@ -24,15 +24,11 @@ public:
         zasieg =z;
         predkosc =p;
 
-        #ifdef _DEBUG
         cout<<"Stworzono samolotA"<<endl;
-        #endif // _DEBUG
     }
 
    ~samolotA(){ //destruktor
-        #ifdef _DEBUG
         cout<<"Usunieto samolotA"<<endl;
-        #endif // _DEBUG
     }
 
  //   virtual void status()const =0;
@@ -65,7 +61,7 @@ public:
         return predkosc;
     }
 
-}; //samolotP
+}; //samolotA
 
 
 

@@ -50,19 +50,17 @@ public:
     void status()const{
         cout<<"Samolot pasazerski"<<endl;
     }
-/*
-    ostream& operator<< (ostream &os, samolotP &s){ // przeciązenie operatora <<
+
+    friend ostream& operator<< (ostream &os, samolotP &s){ // przeciązenie operatora <<
     cout<<"Nazwa: "<<s.getnazwa()<<" ,Wlasciciel: "<<s.getwlasciciel()<<endl;
     cout<<"Predkosc: "<<s.getpredkosc()<<" ,Zasieg: "<<s.getzasieg()<<endl;
     cout<<"Liczba hostess: "<<s.ile()<<endl<<endl;
 
 
     return os;
-} */
+}
 
 }; //samolotP
-
-
 
 
 #endif

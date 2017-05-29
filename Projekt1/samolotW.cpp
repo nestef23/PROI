@@ -17,15 +17,11 @@ public:
         klasa_pancerza=k;
         sprzet_zwiadu=s;
 
-        #ifdef _DEBUG
         cout<<"Stworzono samolotW"<<endl;
-        #endif // _DEBUG
     }
 
      ~samolotW(){ //destruktor
-        #ifdef _DEBUG
         cout<<"Usunieto samolotW"<<endl;
-        #endif // _DEBUG
     }
 
      void setklasa(int k){ //setter
@@ -72,6 +68,14 @@ public:
         return kopia;
     }
 
+    friend ostream& operator<< (ostream &os, samolotW &s){ // przeciązenie operatora <<
+    cout<<"Nazwa: "<<s.getnazwa()<<" ,Wlasciciel: "<<s.getwlasciciel()<<endl;
+    cout<<"Predkosc: "<<s.getpredkosc()<<" ,Zasieg: "<<s.getzasieg()<<endl;
+    cout<<"Ladownosc: "<<s.getladownosc()<<" ,Mrozone: "<<s.getmrozone()<<endl;
+    cout<<"klasa pancerza: "<<s.getklasa()<<" ,Sprzet zwiadowczy: "<<s.getzwiad()<<endl<<endl;
+
+    return os;
+}
 
 };
 

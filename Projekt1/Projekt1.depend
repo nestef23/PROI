@@ -240,21 +240,24 @@
 	<iostream>
 	"pilot.h"
 
-1496087224 source:/home/krzysiek/Pulpit/projekt 3333/PROI/Projekt1/samolotP.cpp
+1496088465 source:/home/krzysiek/Pulpit/projekt 3333/PROI/Projekt1/samolotP.cpp
 	"hostessa.h"
 	"samolotA.cpp"
 
-1496087311 source:/home/krzysiek/Pulpit/projekt 3333/PROI/Projekt1/samolotT.cpp
+1496088484 source:/home/krzysiek/Pulpit/projekt 3333/PROI/Projekt1/samolotT.cpp
 	"samolotA.cpp"
 
-1496087562 source:/home/krzysiek/Pulpit/projekt 3333/PROI/Projekt1/main.cpp
+1496088118 source:/home/krzysiek/Pulpit/projekt 3333/PROI/Projekt1/main.cpp
 	<iostream>
-	"testy.cpp"
+	"testy.h"
 
-1496078779 /home/krzysiek/Pulpit/projekt 3333/PROI/Projekt1/testy.h
-	"lotnisko.h"
+1496088110 /home/krzysiek/Pulpit/projekt 3333/PROI/Projekt1/testy.h
+	"samolotT.cpp"
+	"samolotP.cpp"
+	"samolotA.cpp"
+	"samolotW.cpp"
 
-1496087332 source:/home/krzysiek/Pulpit/projekt 3333/PROI/Projekt1/samolotA.cpp
+1496088293 source:/home/krzysiek/Pulpit/projekt 3333/PROI/Projekt1/samolotA.cpp
 	<iostream>
 	<string>
 
@@ -262,27 +265,29 @@
 	<string>
 	"pilot.h"
 
-1496082578 source:/home/krzysiek/Pulpit/projekt 3333/PROI/Projekt1/testy.cpp
-	<iostream>
+1496088693 source:/home/krzysiek/Pulpit/projekt 3333/PROI/Projekt1/testy.cpp
+	"testy.h"
 
-1496087332 /home/krzysiek/Pulpit/projekt 3333/PROI/Projekt1/samolotA.cpp
+1496088293 /home/krzysiek/Pulpit/projekt 3333/PROI/Projekt1/samolotA.cpp
 	<iostream>
 	<string>
 
-1496087311 /home/krzysiek/Pulpit/projekt 3333/PROI/Projekt1/samolotT.cpp
+1496088484 /home/krzysiek/Pulpit/projekt 3333/PROI/Projekt1/samolotT.cpp
 	"samolotA.cpp"
 
-1496087224 /home/krzysiek/Pulpit/projekt 3333/PROI/Projekt1/samolotP.cpp
+1496088465 /home/krzysiek/Pulpit/projekt 3333/PROI/Projekt1/samolotP.cpp
 	"hostessa.h"
 	"samolotA.cpp"
 
-1496087403 source:/home/krzysiek/Pulpit/projekt 3333/PROI/Projekt1/samolotW.cpp
+1496088590 source:/home/krzysiek/Pulpit/projekt 3333/PROI/Projekt1/samolotW.cpp
 	"samolotT.cpp"
 
-1496087403 /home/krzysiek/Pulpit/projekt 3333/PROI/Projekt1/samolotW.cpp
+1496088725 /home/krzysiek/Pulpit/projekt 3333/PROI/Projekt1/samolotW.cpp
 	"samolotT.cpp"
 
-1496087597 /home/krzysiek/Pulpit/projekt 3333/PROI/Projekt1/testy.cpp
+1496087997 /home/krzysiek/Pulpit/projekt 3333/PROI/Projekt1/testy.cpp
+	"samolotT.cpp"
 	"samolotP.cpp"
+	"samolotA.cpp"
 	"samolotW.cpp"
 

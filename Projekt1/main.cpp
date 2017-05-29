@@ -1,5 +1,5 @@
 #include <iostream>
-#include "testy.cpp"
+#include "testy.h"
 #define _DEBUG
 using namespace std;
 

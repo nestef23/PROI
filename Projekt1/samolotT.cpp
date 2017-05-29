@@ -17,16 +17,11 @@ public:
         ladownosc = l;
         mrozone = m;
         ladunek = ll;
-
-        #ifdef _DEBUG
         cout<<"Stworzono samolotT"<<endl;
-        #endif // _DEBUG
     }
 
     ~samolotT(){ //destruktor
-        #ifdef _DEBUG
         cout<<"Usunieto samolotT"<<endl;
-        #endif // _DEBUG
     }
 
 
@@ -97,13 +92,13 @@ public:
         }
     }
 
-  /*  ostream& operator<< (ostream &os, samolotT &s){ // przeciązenie operatora <<
+   friend ostream& operator<< (ostream &os, samolotT &s){ // przeciązenie operatora <<
     cout<<"Nazwa: "<<s.getnazwa()<<" ,Wlasciciel: "<<s.getwlasciciel()<<endl;
     cout<<"Predkosc: "<<s.getpredkosc()<<" ,Zasieg: "<<s.getzasieg()<<endl;
     cout<<"Ladownosc: "<<s.getladownosc()<<" ,Mrozone: "<<s.getmrozone()<<endl<<endl;
 
     return os;
-} */
+}
 
 }; //samolotT
 
