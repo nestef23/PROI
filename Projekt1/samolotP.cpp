@@ -11,14 +11,24 @@ class samolotP : public samolotA
 public:
 
     vector<hostessa> zaloga;
+    static int licznikP;
 
     samolotP(string n="BRAK", string w="BRAK", int p=0, int z=0): samolotA(n,w,p,z){ //konstruktor
+        #ifdef DEBUG
         cout<<"Stworzono samolotP"<<endl;
+        #endif // DEBUG
     }
 
     ~samolotP(){ //destruktor
+        #ifdef DEBUG
         cout<<"Usunieto samolotP"<<endl;
+        #endif // DEBUG
     }
+
+ /*   string schemat()const{
+        string sss;
+        sss =" samolotP -> "+samolotA::schemat();
+    } */
 
     void addzaloga(hostessa h){
         zaloga.push_back(h);

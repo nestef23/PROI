@@ -219,8 +219,13 @@
 	<string>
 	<vector>
 
-1496082561 source:/home/krzysiek/Pulpit/projekt 3333/PROI/Projekt1/lotnisko.cpp
-	"lotnisko.h"
+1496157838 source:/home/krzysiek/Pulpit/projekt 3333/PROI/Projekt1/lotnisko.cpp
+	<iostream>
+	"samolotT.cpp"
+	"samolotP.cpp"
+	"samolotA.cpp"
+	"samolotW.cpp"
+	<vector>
 
 1496082547 /home/krzysiek/Pulpit/projekt 3333/PROI/Projekt1/lotnisko.h
 	<vector>
@@ -240,24 +245,26 @@
 	<iostream>
 	"pilot.h"
 
-1496088465 source:/home/krzysiek/Pulpit/projekt 3333/PROI/Projekt1/samolotP.cpp
+1496159077 source:/home/krzysiek/Pulpit/projekt 3333/PROI/Projekt1/samolotP.cpp
 	"hostessa.h"
 	"samolotA.cpp"
 
-1496088484 source:/home/krzysiek/Pulpit/projekt 3333/PROI/Projekt1/samolotT.cpp
+1496159002 source:/home/krzysiek/Pulpit/projekt 3333/PROI/Projekt1/samolotT.cpp
 	"samolotA.cpp"
 
-1496088118 source:/home/krzysiek/Pulpit/projekt 3333/PROI/Projekt1/main.cpp
+1496160058 source:/home/krzysiek/Pulpit/projekt 3333/PROI/Projekt1/main.cpp
 	<iostream>
 	"testy.h"
+	<unistd.h>
 
-1496088110 /home/krzysiek/Pulpit/projekt 3333/PROI/Projekt1/testy.h
+1496158233 /home/krzysiek/Pulpit/projekt 3333/PROI/Projekt1/testy.h
 	"samolotT.cpp"
 	"samolotP.cpp"
 	"samolotA.cpp"
 	"samolotW.cpp"
+	"lotnisko.cpp"
 
-1496088293 source:/home/krzysiek/Pulpit/projekt 3333/PROI/Projekt1/samolotA.cpp
+1496159726 source:/home/krzysiek/Pulpit/projekt 3333/PROI/Projekt1/samolotA.cpp
 	<iostream>
 	<string>
 
@@ -265,24 +272,24 @@
 	<string>
 	"pilot.h"
 
-1496088693 source:/home/krzysiek/Pulpit/projekt 3333/PROI/Projekt1/testy.cpp
+1496159893 source:/home/krzysiek/Pulpit/projekt 3333/PROI/Projekt1/testy.cpp
 	"testy.h"
 
-1496088293 /home/krzysiek/Pulpit/projekt 3333/PROI/Projekt1/samolotA.cpp
+1496159726 /home/krzysiek/Pulpit/projekt 3333/PROI/Projekt1/samolotA.cpp
 	<iostream>
 	<string>
 
-1496088484 /home/krzysiek/Pulpit/projekt 3333/PROI/Projekt1/samolotT.cpp
+1496159002 /home/krzysiek/Pulpit/projekt 3333/PROI/Projekt1/samolotT.cpp
 	"samolotA.cpp"
 
-1496088465 /home/krzysiek/Pulpit/projekt 3333/PROI/Projekt1/samolotP.cpp
+1496159077 /home/krzysiek/Pulpit/projekt 3333/PROI/Projekt1/samolotP.cpp
 	"hostessa.h"
 	"samolotA.cpp"
 
-1496088590 source:/home/krzysiek/Pulpit/projekt 3333/PROI/Projekt1/samolotW.cpp
+1496159798 source:/home/krzysiek/Pulpit/projekt 3333/PROI/Projekt1/samolotW.cpp
 	"samolotT.cpp"
 
-1496088725 /home/krzysiek/Pulpit/projekt 3333/PROI/Projekt1/samolotW.cpp
+1496159798 /home/krzysiek/Pulpit/projekt 3333/PROI/Projekt1/samolotW.cpp
 	"samolotT.cpp"
 
 1496087997 /home/krzysiek/Pulpit/projekt 3333/PROI/Projekt1/testy.cpp
@@ -290,4 +297,12 @@
 	"samolotP.cpp"
 	"samolotA.cpp"
 	"samolotW.cpp"
+
+1496157838 /home/krzysiek/Pulpit/projekt 3333/PROI/Projekt1/lotnisko.cpp
+	<iostream>
+	"samolotT.cpp"
+	"samolotP.cpp"
+	"samolotA.cpp"
+	"samolotW.cpp"
+	<vector>
 

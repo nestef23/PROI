@@ -35,7 +35,6 @@
 		<Unit filename="hostessa.cpp" />
 		<Unit filename="hostessa.h" />
 		<Unit filename="lotnisko.cpp" />
-		<Unit filename="lotnisko.h" />
 		<Unit filename="main.cpp" />
 		<Unit filename="samolotA.cpp" />
 		<Unit filename="samolotP.cpp" />

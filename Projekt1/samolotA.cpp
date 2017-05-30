@@ -16,7 +16,6 @@ public:
     int predkosc;
 
 
-
     samolotA(string n="BRAK", string w="BRAK", int p=0, int z=0){ //konstruktor
 
         nazwa = n;
@@ -24,15 +23,20 @@ public:
         zasieg =z;
         predkosc =p;
 
+        #ifdef DEBUG
         cout<<"Stworzono samolotA"<<endl;
+        #endif // DEBUG
     }
 
    ~samolotA(){ //destruktor
+
+        #ifdef DEBUG
         cout<<"Usunieto samolotA"<<endl;
+        #endif // DEBUG
     }
 
- //   virtual void status()const =0;
- //   virtual int ile()const =0;
+    virtual void status()const =0;
+   // virtual string schemat()const =0;
 
 
     void setnazwa(string n){ //setter
@@ -41,10 +45,10 @@ public:
     void setwlasciciel(string w){ //setter
         wlasciciel = w;
     }
-    void setzasieg(int z){ //setter
+    virtual void setzasieg(int z){ //setter
         zasieg = z;
     }
-    void setpredkosc(int p){ //setter
+    virtual void setpredkosc(int p){ //setter
         predkosc = p;
     }
 

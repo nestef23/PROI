@@ -1,8 +1,43 @@
-/*#include <iostream>
-#include "lotnisko.h"
+#ifndef lotn
+#define lotn
 
-#define _DEBUG
+#include <iostream>
+#include "samolotT.cpp"
+#include "samolotP.cpp"
+#include "samolotA.cpp"
+#include "samolotW.cpp"
+#include <vector>
 using namespace std;
+
+template <class T>
+class lotnisko
+{
+    string nazwa_lotniska;
+    int l_miejsc; //maksymalna liczba elementów wektora
+    int wolne;
+    vector<T*>  han;
+public:
+    lotnisko(string nazwa = "BRAK", int n=0);
+    ~lotnisko();
+
+    void setnazwa_lotniska(string);
+    void setl_miejsc(int);
+    void deletesamolot(int);
+
+    string getnazwa_lotniska() const;
+    int getl_miejsc() const;
+
+    lotnisko<T>& operator+=(T& s);
+
+    friend ostream& operator<< (ostream& os,  lotnisko<T>& l){ // przeciązenie operatora <<
+        os<<"---lotnisko-----samolotP-----------------------"<<endl;
+        os<<"Nazwa: "<<l.getnazwa_lotniska()<<" L. miejsc: "<<l.getl_miejsc()<<endl<<endl;
+        for (int i=0; i<l.wolne; i++){
+            cout<<(*l.han[i]);
+        }
+        return os;
+    }
+};
 
 template <class T>
 lotnisko<T>::lotnisko(string nazwa, int n){ //konstruktor
@@ -58,26 +93,4 @@ void lotnisko<T>::deletesamolot(int i){
 }
 
 
-ostream& operator<< (ostream& os,  lotnisko<samolotP>& l){ // przeciązenie operatora <<
-    os<<"---lotnisko-----samolotP-----------------------"<<endl;
-    os<<"Nazwa: "<<l.getnazwa_lotniska()<<" L. miejsc: "<<l.getl_miejsc()<<endl<<endl;
-    for (int i=0; i<l.wolne; i++){
-        cout<<(*l.han[i]);
-    }
-    return os;
-}
-
-ostream& operator<< (ostream& os,  lotnisko<samolotT>& l){ // przeciązenie operatora <<
-    os<<"---lotnisko-----samolotT-----------------------"<<endl;
-    os<<"Nazwa: "<<l.getnazwa_lotniska()<<" L. miejsc: "<<l.getl_miejsc()<<endl<<endl;
-    for (int i=0; i<l.wolne; i++){
-        cout<<(*l.han[i]);
-    }
-    return os;
-}
-
-
-template class lotnisko<samolotP>;
-template class lotnisko<samolotT>;
-
-*/
+#endif

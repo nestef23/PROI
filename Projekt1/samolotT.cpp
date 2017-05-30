@@ -17,20 +17,26 @@ public:
         ladownosc = l;
         mrozone = m;
         ladunek = ll;
+        #ifdef DEBUG
         cout<<"Stworzono samolotT"<<endl;
+        #endif // DEBUG
     }
 
     ~samolotT(){ //destruktor
+        #ifdef DEBUG
         cout<<"Usunieto samolotT"<<endl;
+        #endif // DEBUG
     }
 
+    void status()const{
+        cout<<"Samolot transportowy"<<endl;
+    }
 
-
-    void setladownosc(int l){ //setter
+     virtual void setladownosc(int l){ //setter
         ladownosc = l;
     }
 
-    void setmrozone(bool m){ //setter
+    virtual void setmrozone(bool m){ //setter
         mrozone = m;
     }
 
