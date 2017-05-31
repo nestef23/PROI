@@ -46,15 +46,23 @@ void test4(){
     samolotT t1("t1");
     samolotW w1("w1");
 
-    cout<<p1.ile();
-
-    p1.setnazwa("nowa1");
-    w1.setnazwa("nowa2");
-    t1.nazwa = "nowa3";
+    p1.setnazwa("nowa1");;
+    t1.nazwa = "nowa2";
 
     //t1.getzwiad();
 
+    samolotT *q = new samolotW;
+    //samolotW *w = new samolotT;
+    //samolotT *e = new samolotP;
+
+
     cout<<p1<<t1<<w1;
+
+    (*q).status();
+
+
+
+
 
 
 }
