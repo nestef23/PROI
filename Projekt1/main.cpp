@@ -30,7 +30,10 @@ int main()
             test5();
         }
         if (s=="test6"){
-         //   test1();
+            test6();
+        }
+        if (s=="test7"){
+            test7();
         }
     }
 

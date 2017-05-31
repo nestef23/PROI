@@ -75,21 +75,30 @@ int lotnisko<T>::getl_miejsc() const{ //getter
 
 template <class T>
 lotnisko<T>& lotnisko<T>::operator+=(T& s){ //dodawanie samolotu do lotniskou
-    if(wolne<l_miejsc){
+    try{
+        if(wolne>=l_miejsc)
+            throw l_miejsc;
         han.push_back(&s);
         wolne++;
         cout<<"Dodano samolot"<<endl;
     }
-    else{
-        cout<<"Brak miejsc"<<endl;
+    catch(int e){
+        cout<<"Zajeto wszystkie "<<e<<" miejsc"<<endl;
     }
     return *this;
 }
 
 template <class T>
 void lotnisko<T>::deletesamolot(int i){
-    lotnisko::han.erase(han.begin()+i);
-    lotnisko::wolne--;
+    try{
+        if(han.begin()+i==NULL)
+            throw i;
+        lotnisko::han.erase(han.begin()+i);
+        lotnisko::wolne--;
+    }
+    catch (int i){
+        cout<<"Nie da sie usunac samolotu o indeksie "<<i<<endl;
+    }
 }
 
 

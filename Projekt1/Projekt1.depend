@@ -245,14 +245,14 @@
 	<iostream>
 	"pilot.h"
 
-1496159077 source:/home/krzysiek/Pulpit/projekt 3333/PROI/Projekt1/samolotP.cpp
+1496245258 source:/home/krzysiek/Pulpit/projekt 3333/PROI/Projekt1/samolotP.cpp
 	"hostessa.h"
 	"samolotA.cpp"
 
-1496159002 source:/home/krzysiek/Pulpit/projekt 3333/PROI/Projekt1/samolotT.cpp
+1496245487 source:/home/krzysiek/Pulpit/projekt 3333/PROI/Projekt1/samolotT.cpp
 	"samolotA.cpp"
 
-1496160058 source:/home/krzysiek/Pulpit/projekt 3333/PROI/Projekt1/main.cpp
+1496245639 source:/home/krzysiek/Pulpit/projekt 3333/PROI/Projekt1/main.cpp
 	<iostream>
 	"testy.h"
 	<unistd.h>
@@ -264,7 +264,7 @@
 	"samolotW.cpp"
 	"lotnisko.cpp"
 
-1496159726 source:/home/krzysiek/Pulpit/projekt 3333/PROI/Projekt1/samolotA.cpp
+1496245228 source:/home/krzysiek/Pulpit/projekt 3333/PROI/Projekt1/samolotA.cpp
 	<iostream>
 	<string>
 
@@ -272,24 +272,24 @@
 	<string>
 	"pilot.h"
 
-1496159893 source:/home/krzysiek/Pulpit/projekt 3333/PROI/Projekt1/testy.cpp
+1496245626 source:/home/krzysiek/Pulpit/projekt 3333/PROI/Projekt1/testy.cpp
 	"testy.h"
 
-1496159726 /home/krzysiek/Pulpit/projekt 3333/PROI/Projekt1/samolotA.cpp
+1496245228 /home/krzysiek/Pulpit/projekt 3333/PROI/Projekt1/samolotA.cpp
 	<iostream>
 	<string>
 
-1496159002 /home/krzysiek/Pulpit/projekt 3333/PROI/Projekt1/samolotT.cpp
+1496246172 /home/krzysiek/Pulpit/projekt 3333/PROI/Projekt1/samolotT.cpp
 	"samolotA.cpp"
 
-1496159077 /home/krzysiek/Pulpit/projekt 3333/PROI/Projekt1/samolotP.cpp
+1496245258 /home/krzysiek/Pulpit/projekt 3333/PROI/Projekt1/samolotP.cpp
 	"hostessa.h"
 	"samolotA.cpp"
 
-1496159798 source:/home/krzysiek/Pulpit/projekt 3333/PROI/Projekt1/samolotW.cpp
+1496245244 source:/home/krzysiek/Pulpit/projekt 3333/PROI/Projekt1/samolotW.cpp
 	"samolotT.cpp"
 
-1496159798 /home/krzysiek/Pulpit/projekt 3333/PROI/Projekt1/samolotW.cpp
+1496245244 /home/krzysiek/Pulpit/projekt 3333/PROI/Projekt1/samolotW.cpp
 	"samolotT.cpp"
 
 1496087997 /home/krzysiek/Pulpit/projekt 3333/PROI/Projekt1/testy.cpp
@@ -298,7 +298,7 @@
 	"samolotA.cpp"
 	"samolotW.cpp"
 
-1496157838 /home/krzysiek/Pulpit/projekt 3333/PROI/Projekt1/lotnisko.cpp
+1496246514 /home/krzysiek/Pulpit/projekt 3333/PROI/Projekt1/lotnisko.cpp
 	<iostream>
 	"samolotT.cpp"
 	"samolotP.cpp"

@@ -36,7 +36,10 @@ public:
     }
 
     virtual void status()const =0;
-   // virtual string schemat()const =0;
+    virtual string schemat()const{
+        string q = "samolotA";
+        return q;
+    };
 
 
     void setnazwa(string n){ //setter

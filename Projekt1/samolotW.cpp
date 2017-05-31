@@ -29,6 +29,11 @@ public:
         #endif // DEBUG
     }
 
+    string schemat()const{
+        string q = "samolotW => "+samolotT::schemat();
+        return q;
+    };
+
     void status()const{
         cout<<"Samolot transportowy wojskowy"<<endl;
     }

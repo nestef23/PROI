@@ -11,7 +11,6 @@ public:
     bool mrozone;
     double ladunek;
 
-
     samolotT(string n="BRAK", string w="BRAK", int p=0, int z=0, int l=0, bool m=0, int ll=0) : samolotA( n,  w,  p, z){ //konstruktor
 
         ladownosc = l;
@@ -27,6 +26,11 @@ public:
         cout<<"Usunieto samolotT"<<endl;
         #endif // DEBUG
     }
+
+    virtual string schemat()const{
+        string q = "samolotT => "+samolotA::schemat();
+        return q;
+    };
 
     void status()const{
         cout<<"Samolot transportowy"<<endl;
@@ -80,21 +84,28 @@ public:
 
     template <class T>
     void addladunek(T l){
-        if(ladunek+l<=ladownosc){
+        try{
+            if(ladunek+l>=ladownosc)
+                throw l;
             ladunek +=l;
+            cout<<"dodano ladunek"<<endl;
         }
-        else{
-            cout<<"Brak miejsca"<<endl;
+        catch(int e){
+            cout<<"Nie można dodać "<<e<<" ladunku. To za wiele."<<endl;
         }
     }
 
     template <class T>
     void deleteladunek(T l){
-        if(ladunek-l>=0){
-            ladunek -=l;
+        try{
+        if(ladunek-l<=0){
+                throw l;
         }
-        else{
-            cout<<"Brak ladunku"<<endl;
+        ladunek -=l;
+        cout<<"zabrano ladunek"<<endl;
+        }
+        catch(int e){
+            cout<<"Nie można zabrac "<<e<<" ladunku. To za wiele."<<endl;
         }
     }
 

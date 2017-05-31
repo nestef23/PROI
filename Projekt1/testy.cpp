@@ -46,6 +46,8 @@ void test4(){
     samolotT t1("t1");
     samolotW w1("w1");
 
+    cout<<p1.ile();
+
     p1.setnazwa("nowa1");
     w1.setnazwa("nowa2");
     t1.nazwa = "nowa3";
@@ -77,6 +79,41 @@ w.setladownosc(5000);
 
 cout<<w.getladownosc()<<endl;
 
+
+}
+
+void test6(){
+
+samolotP p1("p1");
+samolotT t1("t1");
+samolotW w1("w1");
+
+cout<<p1.schemat()<<endl;
+cout<<t1.schemat()<<endl;
+cout<<w1.schemat()<<endl;
+}
+
+void test7(){
+
+samolotT p1;
+
+p1.setladownosc(200);
+
+p1.addladunek(300);
+
+p1.addladunek(50);
+
+p1.deleteladunek(100);
+
+p1.deleteladunek(20);
+
+lotnisko<samolotT> l1;
+
+l1+=p1;
+
+l1.setl_miejsc(2);
+
+l1+=p1;
 
 }
 
